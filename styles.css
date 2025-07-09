@@ -1,0 +1,326 @@
+/* --------------------------------------------- */
+/* ----------- ESTILOS BASE PARA PC ------------ */
+/* --------------------------------------------- */
+
+/* Reset básico para que todo arranque prolijo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #201139; /* Fondo violeta oscuro */
+  color: white;
+  line-height: 1.6; /* Espaciado entre líneas para que se lea mejor */
+}
+
+/* ----- NAVBAR (barra de navegación) ----- */
+nav {
+  display: flex; /* Para que el título y el menú estén en línea */
+  justify-content: space-between; /* Título a la izquierda y menú a la derecha */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2a1a4f;
+  position: sticky; /* Queda fija arriba al hacer scroll */
+  top: 0;
+  z-index: 100;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  color: #4be213; /* Verde llamativo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Espaciado entre los ítems del menú */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #FF8C00; /* Cambia a naranja cuando pasás el mouse */
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* ----- BOTÓN DE MENÚ (hamburguesa) solo para celular, oculto en PC ----- */
+.hamburger {
+  display: none; /* Oculto en escritorio */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* ----- HEADER (sección principal con fondo e info destacada) ----- */
+header {
+  background: linear-gradient(to bottom, rgba(32,17,57,0.85), rgba(32,17,57,0.9)), url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #4be213;
+  font-weight: 800;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----- BOTÓN PRINCIPAL ----- */
+.btn-primary {
+  background-color: #43c010; /* verde más oscuro y más legible */
+  color: #fff; /* blanco mejora el contraste */
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #FF8C00; /* NARANJA */
+  color: #fff; /* texto blanco */
+}
+
+/* ----- SECCIONES EN GENERAL ----- */
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  color: #FF8C00;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* ----- CAJAS DESTACADAS ----- */
+.highlight-box {
+  background-color: #2a1a4f;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.benefits li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* ----- BIOGRAFÍA Y FOTO ----- */
+.bio {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bio img {
+  width: 200px;
+  border-radius: 12px;
+}
+
+.bio-text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+
+/* ----- TESTIMONIOS ----- */
+.testimonial {
+  background-color: #2d1e50;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* ----- FAQS ----- */
+.faq-item {
+  margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+  color: #4be213;
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+
+.faq-item p {
+  font-size: 1.05rem;
+}
+
+/* ----- PIE DE PÁGINA ----- */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+/* ----- REDES SOCIALES ----- */
+.social {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social a {
+  margin: 0 15px;
+  color: #4be213;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.social a img {
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+}
+
+.social a:hover {
+  color: #FF8C00;
+}
+
+.seccion-ajustada {
+  scroll-margin-top: 100px; /* o probá con 120px si la navbar es más alta */
+}
+/* Ocultar sticky-cta en pantallas grandes (PC) */
+@media (min-width: 769px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+
+/* --------------------------------------------- */
+/* ----------- ESTILOS PARA CELULAR ------------ */
+/* --------------------------------------------- */
+@media (max-width: 768px) {
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #2a1a4f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  body {
+    padding-bottom: 60px; /* espacio para que el botón no tape el footer */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%; /* justo debajo del nav */
+    right: 1rem;
+    background-color: #2a1a4f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+    z-index: 999;
+    width: 200px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Evitar que el header baje de altura */
+  header {
+    height: auto;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: #4be213;
+    color: #201139;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4be213;
+    color: #201139;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 200;
+    border-top: 2px solid #fff;
+  }
+}
+
+/* Animación suave para el menú */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
