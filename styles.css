@@ -2,9 +2,8 @@
 /* ----------- ESTILOS BASE PARA PC ------------ */
 /* --------------------------------------------- */
 
-/* Botón login alumnos dentro del navbar */
 .login-btn {
-  background-color: #FF8C00;
+  background-color: #0072ff;
   color: #fff !important;
   padding: 0.4rem 1rem;
   border-radius: 6px;
@@ -14,55 +13,56 @@
 }
 
 .login-btn:hover {
-  background-color: #e66e00;
+  background-color: #00c6ff;
 }
 
-/* Reset básico para que todo arranque prolijo */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo general del cuerpo de la página */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #201139; /* Fondo violeta oscuro */
-  color: white;
-  line-height: 1.6; /* Espaciado entre líneas para que se lea mejor */
+  background-color: #0d1117;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
-/* ----- NAVBAR (barra de navegación) ----- */
 nav {
-  display: flex; /* Para que el título y el menú estén en línea */
-  justify-content: space-between; /* Título a la izquierda y menú a la derecha */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #2a1a4f;
-  position: sticky; /* Queda fija arriba al hacer scroll */
+  background-color: #0d1117;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
   top: 0;
   z-index: 100;
 }
 
 nav h1 {
   font-size: 1.5rem;
-  color: #4be213; /* Verde llamativo */
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem; /* Espaciado entre los ítems del menú */
+  gap: 1.5rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #d9d9d9;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #FF8C00; /* Cambia a naranja cuando pasás el mouse */
+  color: #00c6ff;
 }
 
 ul {
@@ -76,9 +76,8 @@ ul li {
   line-height: 1.5;
 }
 
-/* ----- BOTÓN DE MENÚ (hamburguesa) solo para celular, oculto en PC ----- */
 .hamburger {
-  display: none; /* Oculto en escritorio */
+  display: none;
   font-size: 2rem;
   background: none;
   border: none;
@@ -86,9 +85,8 @@ ul li {
   color: white;
 }
 
-/* ----- HEADER (sección principal con fondo e info destacada) ----- */
 header {
-  background: linear-gradient(to bottom, rgba(32,17,57,0.85), rgba(32,17,57,0.9)), url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95)), url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -99,22 +97,21 @@ header {
 
 header h1 {
   font-size: 3rem;
-  color: #4be213;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
 
 header p {
   font-size: 1.3rem;
-  margin: 1rem 0;
+  margin: 1rem auto;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* ----- BOTÓN PRINCIPAL ----- */
 .btn-primary {
-  background-color: #43c010; /* verde más oscuro y más legible */
-  color: #fff; /* blanco mejora el contraste */
+  background-color: #0072ff;
+  color: #fff;
   padding: 1rem 2rem;
   border-radius: 8px;
   font-weight: bold;
@@ -125,11 +122,10 @@ header p {
 }
 
 .btn-primary:hover {
-  background-color: #FF8C00; /* NARANJA */
-  color: #fff; /* texto blanco */
+  background-color: #00c6ff;
+  color: #fff;
 }
 
-/* ----- SECCIONES EN GENERAL ----- */
 section {
   padding: 3rem 2rem;
   max-width: 900px;
@@ -137,18 +133,18 @@ section {
 }
 
 section h2 {
-  font-size: 2.2rem;
-  color: #FF8C00;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #00c6ff;
   text-align: center;
+  font-weight: 800;
 }
 
-/* ----- CAJAS DESTACADAS ----- */
 .highlight-box {
-  background-color: #2a1a4f;
+  background-color: #161b22;
   padding: 2rem;
   border-radius: 10px;
   margin-top: 1rem;
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
 .benefits li {
@@ -156,7 +152,6 @@ section h2 {
   font-size: 1.1rem;
 }
 
-/* ----- BIOGRAFÍA Y FOTO ----- */
 .bio {
   display: flex;
   gap: 2rem;
@@ -175,23 +170,21 @@ section h2 {
   line-height: 1.5;
 }
 
-
-/* ----- TESTIMONIOS ----- */
 .testimonial {
-  background-color: #2d1e50;
+  background-color: #161b22;
   padding: 2rem;
   border-radius: 15px;
   margin-bottom: 2rem;
   font-style: italic;
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
-/* ----- FAQS ----- */
 .faq-item {
   margin-bottom: 2rem;
 }
 
 .faq-item h3 {
-  color: #4be213;
+  color: #00c6ff;
   font-size: 1.3rem;
   margin-bottom: .5rem;
 }
@@ -200,16 +193,15 @@ section h2 {
   font-size: 1.05rem;
 }
 
-/* ----- PIE DE PÁGINA ----- */
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: #0d1117;
+  color: #d9d9d9;
   text-align: center;
   padding: 2rem;
   font-size: 0.95rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* ----- REDES SOCIALES ----- */
 .social {
   margin-top: 2rem;
   text-align: center;
@@ -217,7 +209,7 @@ footer {
 
 .social a {
   margin: 0 15px;
-  color: #4be213;
+  color: #00c6ff;
   text-decoration: none;
   font-weight: 600;
   display: inline-flex;
@@ -236,9 +228,9 @@ footer {
 }
 
 .seccion-ajustada {
-  scroll-margin-top: 100px; /* o probá con 120px si la navbar es más alta */
+  scroll-margin-top: 100px;
 }
-/* Ocultar sticky-cta en pantallas grandes (PC) */
+
 @media (min-width: 769px) {
   .sticky-cta {
     display: none;
@@ -253,15 +245,12 @@ footer {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #2a1a4f;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #0d1117;
     padding: 1rem;
   }
 
   body {
-    padding-bottom: 60px; /* espacio para que el botón no tape el footer */
+    padding-bottom: 60px;
   }
 
   .hamburger {
@@ -270,9 +259,9 @@ footer {
 
   .nav-links {
     position: absolute;
-    top: 100%; /* justo debajo del nav */
+    top: 100%;
     right: 1rem;
-    background-color: #2a1a4f;
+    background-color: #161b22;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     padding: 1rem;
@@ -289,7 +278,6 @@ footer {
     display: flex;
   }
 
-  /* Evitar que el header baje de altura */
   header {
     height: auto;
     padding: 3rem 1rem;
@@ -297,18 +285,17 @@ footer {
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .btn-primary {
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
     margin-top: 1rem;
-    background-color: #4be213;
-    color: #201139;
+    background-color: #0072ff;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    text-decoration: none;
     font-weight: 600;
   }
 
@@ -317,8 +304,8 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #4be213;
-    color: #201139;
+    background-color: #0072ff;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     font-weight: bold;
@@ -328,7 +315,6 @@ footer {
   }
 }
 
-/* Animación suave para el menú */
 @keyframes fadeIn {
   from {
     opacity: 0;
