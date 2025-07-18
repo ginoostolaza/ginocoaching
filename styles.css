@@ -109,6 +109,35 @@ header p {
   max-width: 600px;
 }
 
+.redes-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #00c6ff; /* color base azul */
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+.redes-link:hover,
+.redes-link:focus {
+  color: #0091d5; /* azul un poco más oscuro */
+  text-decoration: underline;
+  transform: scale(1.05);
+  outline: none;
+}
+
+.redes-link img {
+  transition: filter 0.3s ease;
+}
+
+.redes-link:hover img,
+.redes-link:focus img {
+  filter: brightness(1.2);
+}
+
 .btn-primary {
   background-color: #0072ff;
   color: #fff;
