@@ -5,282 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LA SALA - FASE 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css"/>
   <style>
-    @media (max-width: 768px) {
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        margin: 0;
-        padding: 20px;
-        line-height: 1.6;
-      }
-      header {
-        background-color: #007BFF;
-        color: white;
-        padding: 30px; /* Aumentado para mayor separación */
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        margin: 0; /* Eliminar margen superior para mejor ajuste */
-      }
-      h2, h3 {
-        color: #007BFF;
-      }
-      .beneficios, .verificacion {
-        background: white;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-      }
-      .accordion-button {
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        padding: 10px;
-        width: 100%;
-        text-align: left;
-        cursor: pointer;
-        outline: none;
-        font-size: 16px;
-        transition: background-color 0.3s;
-        border-radius: 5px;
-        margin-top: 5px;
-      }
-      .accordion-button:hover {
-        background-color: #0056b3;
-      }
-      .accordion-content {
-        padding: 15px;
-        display: none;
-        border-top: 1px solid #ccc;
-        margin-top: 5px;
-      }
-      .divider {
-        margin: 15px 0;
-      }
-      .footer {
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px 0;
-        background-color: #007BFF;
-        color: white;
-        border-radius: 8px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-      .back-button {
-        background-color: #FF5733;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        margin-bottom: 20px;
-        transition: background-color 0.3s;
-      }
-      .back-button:hover {
-        background-color: #C70039;
-      }
-      .button {
-        background-color: #28a745;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 10px;
-        transition: background-color 0.3s;
-      }
-      .button:hover {
-        background-color: #218838;
-      }
-      .texto-info {
-        font-weight: bold;
-        margin-top: 20px;
-      }
-      .precio-ars {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: #007BFF;
-      }
-      .formulario {
-        display: grid;
-        gap: 10px;
-      }
-      .formulario label {
-        font-weight: bold;
-      }
-      .formulario input[type="text"],
-      .formulario input[type="email"],
-      .formulario input[type="file"] {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      .formulario input[type="file"] {
-        padding: 5px;
-      }
-      .metodo-pago {
-        margin-bottom: 20px;
-      }
-      .metodo-pago h4 {
-        color: #007BFF;
-      }
-      .metodo-pago p {
-        margin: 0;
-      }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      max-width: 1200px; /* Ancho máximo para el contenido */
+      margin-left: auto; /* Centrar el contenedor */
+      margin-right: auto; /* Centrar el contenedor */
     }
 
-      @media (min-width: 768px) {
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #f4f4f4;
-        color: #333;
-        margin: 0;
-        padding: 30px;
-        line-height: 1.6;
-      }
-      header {
-        background-color: #007BFF;
-        color: white;
-        padding: 30px; /* Aumentado para mayor separación */
-        text-align: center;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        margin: 0; /* Eliminar margen superior para mejor ajuste */
-      }
-      h2, h3 {
-        color: #007BFF;
-      }
-      .beneficios, .verificacion {
-        background: white;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-      }
-      .accordion-button {
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        padding: 10px;
-        width: 100%;
-        text-align: left;
-        cursor: pointer;
-        outline: none;
-        font-size: 16px;
-        transition: background-color 0.3s;
-        border-radius: 5px;
-        margin-top: 5px;
-      }
-      .accordion-button:hover {
-        background-color: #0056b3;
-      }
-      .accordion-content {
-        padding: 15px;
-        display: none;
-        border-top: 1px solid #ccc;
-        margin-top: 5px;
-      }
-      .divider {
-        margin: 15px 0;
-      }
-      .footer {
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px 0;
-        background-color: #007BFF;
-        color: white;
-        border-radius: 8px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-      .back-button {
-        background-color: #FF5733;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        margin-bottom: 20px;
-        transition: background-color 0.3s;
-      }
-      .back-button:hover {
-        background-color: #C70039;
-      }
-      .button {
-        background-color: #28a745;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 10px;
-        transition: background-color 0.3s;
-      }
-      .button:hover {
-        background-color: #218838;
-      }
-      .texto-info {
-        font-weight: bold;
-        margin-top: 20px;
-      }
-      .precio-ars {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: #007BFF;
-      }
-      .formulario {
-        display: grid;
-        gap: 10px;
-      }
-      .formulario label {
-        font-weight: bold;
-      }
-      .formulario input[type="text"],
-      .formulario input[type="email"],
-      .formulario input[type="file"] {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        width: 100%;
-        box-sizing: border-box;
-      }
-      .formulario input[type="file"] {
-        padding: 5px;
-      }
-      .metodo-pago {
-        margin-bottom: 20px;
-      }
-      .metodo-pago h4 {
-        color: #007BFF;
-      }
-      .metodo-pago p {
-        margin: 0;
-      }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 40px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    h2, h3 {
+      color: #007BFF;
+      text-align: center; /* Centrar títulos */
+    }
+
+    .beneficios, .verificacion {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .accordion-button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+
+    .accordion-button:hover {
+      background-color: #0056b3;
+    }
+
+    .accordion-content {
+      padding: 15px;
+      display: none;
+      border-top: 1px solid #ccc;
+      margin-top: 5px;
+    }
+
+    .divider {
+      margin: 15px 0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 20px 0;
+      background-color: #201139;
+      color: #D9D9D9;
+      border-radius: 8px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer .footer-columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      max-width: 1200px; /* Ancho máximo para el contenido */
+      margin: 0 auto; /* Centrar el contenedor */
+      padding: 20px 10px; /* Espaciado interno */
+    }
+
+    .footer h4 {
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .footer p, .footer ul {
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .back-button {
+      background-color: #FF5733;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+      position: absolute; /* Posicionamiento absoluto */
+      top: 20px; /* Espacio desde la parte superior */
+      left: 20px; /* Espacio desde la izquierda */
+    }
+
+    .back-button:hover {
+      background-color: #C70039;
+    }
+
+    .button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #218838;
+    }
+
+    .texto-info {
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center; /* Centrar texto informativo */
+    }
+
+    .precio-ars {
+      font-size: 1.5em; /* Tamaño aumentado para mayor énfasis */
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    .formulario {
+      display: grid;
+      gap: 10px;
+    }
+
+    .formulario label {
+      font-weight: bold;
+    }
+
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario input[type="file"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .formulario input[type="file"] {
+      padding: 5px;
+    }
+
+    .metodo-pago {
+      margin-bottom: 20px;
+    }
+
+    .metodo-pago h4 {
+      color: #007BFF;
+    }
+
+    .metodo-pago p {
+      margin: 0;
+    }
+
+    .metodo-pago ul {
+      padding-left: 0; /* Eliminar padding en la lista */
+      list-style-type: none; /* Eliminar viñetas */
+    }
+
+    .metodo-pago li {
+      margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+    }
+
+    .metodo-pago a {
+      color: #007BFF;
+      text-decoration: none; /* Quitar subrayado */
+    }
+
+    .metodo-pago a:hover {
+      text-decoration: underline; /* Subrayar al pasar el ratón */
     }
   </style>
 </head>
 <body>
+  <a href="index.html" class="back-button">Volver</a>
+
   <header>
     <h1>Bienvenido a la Fase 1</h1>
     <p>Transformá tu futuro con estrategias iniciales y acompañamiento personalizado</p>
@@ -289,10 +227,8 @@
   <h2 class="titulo-fase">Fase 1: Integrate al Proceso de Transformación</h2>
   <p class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
   
-  <a href="index.html" class="back-button">Volver</a>
-  
   <section class="beneficios">
-    <h3>FASE 1 - Sala $50 USD/1 Mes</h3>
+    <h3>FASE 1 - Sala $50 USD</h3>
     <p>Si estás comenzando y deseas construir una base sólida, esta fase es para ti. Incluye:</p>
     <ul class="benefits">
       <li>✅ Estrategias probadas de trading: Aprende sistemas rentables con guías detalladas.</li>
@@ -309,15 +245,20 @@
     <p>📌 Perfecta si querés consistencia y un entorno cercano que te potencie.</p>
   </section>
 
+<div style="text-align: center;">
+  <p style="color: #555; margin-top: 10px;">
+    En Argentina, se utiliza el dólar blue como referencia para la cotización de monedas extranjeras.
+  </p>
   <div id="dolar-blue" class="dolar-blue">Consultando cotización actual del dólar...</div>
+</div>
 
   <section class="accordion">
-    <h3>Opciones de Pago</h3>
+    <h3>Métodos de Pago</h3>
     <div class="accordion-item metodo-pago">
       <button class="accordion-button">Transferencia Bancaria Argentina (en pesos)</button>
       <div class="accordion-content">
+        <p><strong>Monto a transferir:</strong></p>
         <p class="precio-ars">
-          Valor a transferir (USD 50): 
           <span class="resultado-transferencia">Cargando...</span> ARS
         </p>
         <p class="nota">
@@ -331,16 +272,6 @@
           <li><strong>Alias:</strong> GINO.OSTOLAZA.GON</li>
           <li><strong>Nombre:</strong> Gonzalez Gino Ostolaza</li>
           <li><strong>CUIT:</strong> 20-48637004-2</li>
-        </ul>
-
-        <hr class="divider" />
-
-        <p><strong>💳 Ualá</strong></p>
-        <ul>
-          <li><strong>CVU:</strong> 0000007900273495079499</li>
-          <li><strong>Alias:</strong> GIN17O.UALA</li>
-          <li><strong>Nombre:</strong> Maria Victoria Gonzalez</li>
-          <li><strong>CUIT:</strong> 27-34950794-9</li>
         </ul>
 
         <hr class="divider" />
@@ -360,7 +291,8 @@
     <div class="accordion-item metodo-pago">
       <button class="accordion-button">Criptomonedas (Internacional y Argentina en dólares)</button>
       <div class="accordion-content">
-        <p><strong>Valor del pago:</strong> <span>50 USD</span></p>
+        <p><strong>Monto a transferir:</strong></p>
+        <p class="precio-ars">$50,00 USD</p>
 
         <hr class="divider" />
 
@@ -391,7 +323,8 @@
     <div class="accordion-item metodo-pago">
       <button class="accordion-button">Pagos Internacionales (en dólares)</button>
       <div class="accordion-content">
-        <p><strong>Valor del pago:</strong> <span>50 USD</span></p>
+        <p><strong>Monto a transferir:</strong></p>
+        <p class="precio-ars">$50,00 USD</p>
 
         <hr class="divider" />
 
@@ -400,8 +333,8 @@
           <li>
             Hacé clic en el siguiente enlace para pagar directamente:
             <br />
-            <a href="https://paypal.me/GinoOstolaza/50?note=Hola%20Gino!%20Ac%C3%A1%20te%20env%C3%ADo%20el%20pago%20de%20la%20fase%201,%20mi%20nombre%20es%3A%20" target="_blank" rel="noopener noreferrer">
-              paypal.me/GinoOstolaza
+            <a href="https://paypal.me/GinoOstolaza/50?note=Hola%20Gino!%20Ac%C3%A1%20te%20env%C3%ADo%20el%20pago%20de%20la%20fase%201,%20mi%20nombre%20es%3A%20" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
+              Pagar con PayPal
             </a>
           </li>
           <li>
@@ -425,58 +358,34 @@
     </div>
 
     <div class="accordion-item metodo-pago">
-      <button class="accordion-button">Efectivo (15% OFF)</button>
+      <button class="accordion-button">Efectivo (15% OFF) para personas de la zona</button>
       <div class="accordion-content">
-        <p>Abonando en efectivo <strong>15% OFF</strong> para personas de la zona</p>
+        <p>Abonando en efectivo tenes un <strong>15% OFF</strong></p>
         <p class="precio-ars"><span id="resultado-efectivo">Cargando...</span> ARS</p>
         <p class="nota">Valor descontado basado en el dólar blue - 15%.</p>
       </div>
     </div>
   </section>
 
-  <p class="texto-info">Completá el siguiente formulario para validar tu inscripción una vez realizado el pago:</p>
+  <p class="texto-info">Si ya realizaste el pago o estás por hacerlo y tenés alguna duda, podés comunicarte directamente conmigo. Estoy para ayudarte en todo el proceso.</p>
+  <p class="texto-info">
+    <a href="https://instagram.com/ginoostolazaob" target="_blank" style="color: #4be213; text-decoration: underline;">Hacé clic aquí para hablarme por Instagram</a>.
+  </p>
 
-  <section class="verificacion">
-    <h2 class="titulo-verificacion">Verificá tu inscripción</h2>
-    <p class="texto-verificacion">Una vez confirmado el pago, completá el siguiente formulario con tus datos para activar tu acceso.</p>
-    
-    <form class="formulario" action="https://formsubmit.co/tu-correo@gmail.com" method="POST" enctype="multipart/form-data">
-      <label for="nombre">Nombre completo</label>
-      <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
-
-      <label for="dni">DNI con CUIL</label>
-      <input type="text" id="dni" name="dni" required placeholder="Ej: 30.123.456 / 20-30123456-3">
-
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" required placeholder="Ej: ejemplo@mail.com">
-
-      <label for="email_confirm">Confirmá tu correo</label>
-      <input type="email" id="email_confirm" name="email_confirm" required>
-
-      <label for="comprobante">Foto del comprobante de pago</label>
-      <input type="file" name="comprobante" accept="image/*" onchange="previewImage(event)" />
-
-      <img id="preview" alt="Vista previa del comprobante" style="display:none; margin-top: 10px;"/>
-
-      <button type="submit" class="button">Enviar datos</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <div>
-      <p>© <span id="anio-actual"></span> Gino Ostolaza. Todos los derechos reservados.</p>
-      <p>
-        <a href="https://instagram.com/gino.ostolaza" style="color: white; text-decoration: underline;" target="_blank">Síguenos en Instagram</a>
-      </p>
-      <p>
-        <a href="mailto:tu-correo@gmail.com" style="color: white; text-decoration: underline;">Contáctanos</a>
-      </p>
-    </div>
-  </footer>
+  <div style="
+    width: 100%;
+    background-color: #181028;
+    color: #D9D9D9;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+  ">
+    © <span id="anio-actual"></span> Gino Ostolaza. Todos los derechos reservados.
+  </div>
 
   <script>
     // Mostrar año actual en el pie de página
-    document.getElementById("anio-actual").textContent = new Date().getFullYear();
+    document.getElementById('anio-actual').textContent = new Date().getFullYear();
 
     // Previsualización de imagen del comprobante
     function previewImage(event) {
@@ -492,31 +401,12 @@
 
     // Esperar a que el DOM esté completamente cargado
     document.addEventListener("DOMContentLoaded", () => {
-      
       // Funcionalidad de acordeón (mostrar/ocultar)
       document.querySelectorAll('.accordion-button').forEach(button => {
         button.addEventListener('click', () => {
           const content = button.nextElementSibling;
           content.style.display = content.style.display === 'block' ? 'none' : 'block';
         });
-      });
-
-      // Validación de correo electrónico en formulario
-      const form = document.querySelector("form");
-      form.addEventListener("submit", function (e) {
-        const email = document.getElementById("email").value;
-        const confirm = document.getElementById("email_confirm").value;
-
-        if (email !== confirm) {
-          alert("Los correos no coinciden");
-          e.preventDefault();
-          return;
-        }
-
-        // Deshabilitar botón de envío mientras se procesa
-        const btn = document.querySelector(".button");
-        btn.disabled = true;
-        btn.innerText = "Enviando...";
       });
 
       // Obtener cotización actual del dólar blue
