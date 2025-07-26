@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LA SALA - FASE 2</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css"/>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -18,15 +17,15 @@
     header {
       background-color: #007BFF;
       color: white;
-      padding: 40px; /* Aumentado para mayor separación */
+      padding: 40px;
       text-align: center;
       border-radius: 8px;
       margin-bottom: 20px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
     h1 {
-      margin: 0; /* Eliminar margen superior para mejor ajuste */
-      font-size: 2.5em; /* Tamaño de fuente ajustado */
+      margin: 0;
+      font-size: 2.5em;
     }
     h2, h3 {
       color: #007BFF;
@@ -71,29 +70,9 @@
       background-color: #007BFF;
       color: white;
       border-radius: 8px;
-      position: relative;
-      bottom: 0;
       width: 100%;
     }
-    .back-button {
-      background-color: #FF5733;
-      color: white;
-      border: none;
-      padding: 12px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 20px;
-      transition: background-color 0.3s;
-      font-size: 16px;
-    }
-    .back-button:hover {
-      background-color: #C70039;
-    }
-    .button {
-      background-color: #28a745;
-      color: white;
+    .back-button, .button {
       border: none;
       padding: 12px;
       border-radius: 5px;
@@ -103,6 +82,18 @@
       margin-top: 10px;
       transition: background-color 0.3s;
       font-size: 16px;
+    }
+    .back-button {
+      background-color: #FF5733;
+      color: white;
+      margin-bottom: 20px;
+    }
+    .back-button:hover {
+      background-color: #C70039;
+    }
+    .button {
+      background-color: #28a745;
+      color: white;
     }
     .button:hover {
       background-color: #218838;
@@ -135,14 +126,8 @@
     .formulario input[type="file"] {
       padding: 5px;
     }
-    .metodo-pago {
-      margin-bottom: 20px;
-    }
     .metodo-pago h4 {
       color: #007BFF;
-    }
-    .metodo-pago p {
-      margin: 0;
     }
 
     /* Estilos Responsive */
@@ -199,18 +184,31 @@
         padding: 15px 0;
       }
     }
+
+    /* Estilo para el mensaje "Próximamente!" */
+    .proximamente {
+      font-size: 3em;
+      text-align: center;
+      margin: 50px 0;
+      color: #FF5733;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a la Fase 2</h1>
+    <h1>Sea bienvenido a la Fase 2</h1>
     <p>Transformá tu futuro con estrategias avanzadas y acompañamiento personalizado</p>
   </header>
 
-  <h2 class="titulo-fase">Fase 2: Integrate al Proceso de Transformación</h2>
-  <p class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
-  
   <a href="index.html" class="back-button">Volver</a>
+
+  <!-- Comentario para mantener el contenido -->
+   
+
+  <div class="proximamente">Próximamente!</div>
+  
+  <h2>Este contenido está en desarrollo y será visible pronto</h2><!--<h2 class="titulo-fase">Fase 2: Integrate al Proceso de Transformación</h2>
+  <p class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
   
   <section class="beneficios">
     <h3>FASE 2 - Sala $200 USD/3 Meses</h3>
@@ -255,16 +253,6 @@
           <li><strong>Alias:</strong> GINO.OSTOLAZA.GON</li>
           <li><strong>Nombre:</strong> Gonzalez Gino Ostolaza</li>
           <li><strong>CUIT:</strong> 20-48637004-2</li>
-        </ul>
-
-        <hr class="divider" />
-
-        <p><strong>💳 Ualá</strong></p>
-        <ul>
-          <li><strong>CVU:</strong> 0000007900273495079499</li>
-          <li><strong>Alias:</strong> GIN17O.UALA</li>
-          <li><strong>Nombre:</strong> Maria Victoria Gonzalez</li>
-          <li><strong>CUIT:</strong> 27-34950794-9</li>
         </ul>
 
         <hr class="divider" />
@@ -480,6 +468,6 @@
           console.error("Error al obtener la cotización:", error);
         });
     });
-  </script>
+  </script>-->
 </body>
 </html>
