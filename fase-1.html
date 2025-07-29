@@ -5,255 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LA SALA - FASE 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon.jpg">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-      max-width: 1200px; /* Ancho máximo para el contenido */
-      margin-left: auto; /* Centrar el contenedor */
-      margin-right: auto; /* Centrar el contenedor */
-    }
-
-    header {
-      background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95));
-      color: white;
-      padding: 40px;
-      text-align: center;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-
-    h2, h3 {
-      color: #007BFF;
-      text-align: center; /* Centrar títulos */
-    }
-
-    .beneficios, .verificacion, .ul {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-    }
-
-    .beneficios ul {
-      list-style-type: none; /* Eliminar las viñetas */
-      padding: 0; /* Eliminar el padding por defecto */
-      margin: 0; /* Eliminar el margen por defecto */
-    }
-
-    .accordion-button {
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      padding: 10px;
-      width: 100%;
-      text-align: left;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 5px;
-    }
-
-    .accordion-button:hover {
-      background-color: #0056b3;
-    }
-
-    .accordion-content {
-      padding: 15px;
-      display: none;
-      border-top: 1px solid #ccc;
-      margin-top: 5px;
-    }
-
-    .divider {
-      margin: 15px 0;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 30px;
-      padding: 20px 0;
-      background-color: #201139;
-      color: #D9D9D9;
-      border-radius: 8px;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-
-    .footer .footer-columns {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      max-width: 1200px; /* Ancho máximo para el contenido */
-      margin: 0 auto; /* Centrar el contenedor */
-      padding: 20px 10px; /* Espaciado interno */
-    }
-
-    .footer h4 {
-      margin-bottom: 12px;
-      font-weight: 600;
-      color: white;
-    }
-
-    .footer p, .footer ul {
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
-    }
-
-    .footer ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .back-button {
-      background-color: #FF5733;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 20px;
-      transition: background-color 0.3s;
-      position: absolute; /* Posicionamiento absoluto */
-      top: 20px; /* Espacio desde la parte superior */
-      left: 20px; /* Espacio desde la izquierda */
-    }
-
-    .back-button:hover {
-      background-color: #C70039;
-    }
-
-    .button {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      transition: background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: #218838;
-    }
-
-    .emoji {
-      width: 20px; /* Ajusta el tamaño del emoji */
-      height: 20px; /* Mantiene la proporción */
-      vertical-align: middle; /* Alinea el emoji con el texto */
-      margin-right: 5px; /* Espacio entre el emoji y el texto */
-    }
-
-    .texto-info {
-      font-weight: bold;
-      margin-top: 20px;
-      text-align: center; /* Centrar texto informativo */
-    }
-
-    .precio-ars {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #007BFF;
-    }
-    
-    .formulario {
-      display: grid;
-      gap: 10px;
-    }
-
-    .formulario label {
-      font-weight: bold;
-    }
-
-    .formulario input[type="text"],
-    .formulario input[type="email"],
-    .formulario input[type="file"] {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .formulario input[type="file"] {
-      padding: 5px;
-    }
-
-    .metodo-pago {
-      margin-bottom: 20px;
-    }
-
-    .metodo-pago h4 {
-      color: #007BFF;
-    }
-
-    .metodo-pago p {
-      margin: 0;
-    }
-
-    .metodo-pago ul {
-      padding-left: 0; /* Eliminar padding en la lista */
-      list-style-type: none; /* Eliminar viñetas */
-    }
-
-    .metodo-pago li {
-      margin-bottom: 10px; /* Espaciado entre elementos de la lista */
-    }
-
-    .metodo-pago a {
-      color: #007BFF;
-      text-decoration: none; /* Quitar subrayado */
-    }
-
-    .metodo-pago a:hover {
-      text-decoration: underline; /* Subrayar al pasar el ratón */
-    }
-
-    .boton-de-verificacion {
-      display: inline-block; /* Permite que se ajuste al texto */
-      width: 20px; /* Ajusta el tamaño del ícono */
-      height: 20px; /* Mantiene la proporción */
-      background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
-      background-size: contain; /* Asegura que la imagen se ajuste */
-      background-repeat: no-repeat; /* Evita que se repita la imagen */
-      vertical-align: middle; /* Alinea verticalmente con el texto */
-      margin-right: 5px; /* Espacio entre el ícono y el texto */
-    }
-  </style>
+  <link rel="icon" type="image/png" href="favicon.jpg" sizes="32x32">
+  <link rel="stylesheet" href="pasareladepago1.css"/>
+  <meta name="description" content="Transformá tu futuro aprendiendo trading, desarrollo personal y técnicas de manifestación junto a Gino Ostolaza.">
+  <meta property="og:title" content="La Sala - Fase 1">
+  <meta property="og:image" content="logo.jpg">
+  <meta property="og:description" content="Estrategias, comunidad y transformación personal. Ingresá ahora.">
+  <meta name="theme-color" content="#007BFF">
 </head>
 <body>
   <a href="index.html" class="back-button">Volver</a>
 
-  <header>
-    <img src="logo.jpg" alt="Logo Gino Ostolaza" style="max-width: 150px; display: block; margin: 0 auto 20px; border-radius: 10px;">
-    <h1>BIENVENIDO/A A LA FASE 1</h1>
-    <p>Transformá tu futuro con estrategias iniciales y acompañamiento personalizado</p>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="logo.jpg" alt="Logo Gino Ostolaza" class="logo-img">
+      <div class="hero-text">
+        <h1>BIENVENIDA/O A LA FASE 1</h1>
+        <p>Transformá tu futuro con estrategias iniciales y acompañamiento personalizado</p>
+      </div>
+    </div>
   </header>
 
   <h2 class="titulo-fase">FASE 1: INTEGRATE AL PROCESO DE TRANSFORMACIÓN</h2>
-  <p style="text-align: center;" class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
+  <p class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
   
   <section class="beneficios">
     <h3>FASE 1 - COMUNIDAD $50 USD</h3>
-    <p>Si estás comenzando y deseas construir una base sólida, esta fase es para ti. Incluye:</p>
-    <ul class="benefits">
+    <p style="text-align: center;">Si estás comenzando y deseas construir una base sólida, esta fase es para ti. Incluye:</p>
+    <ul class="beneficios">
       <li><span class="boton-de-verificacion"></span> 2 estrategias rentables: Aprenderás sistemas rentables de trading</li>
       <li><span class="boton-de-verificacion"></span> Formación completa desde cero: Configuración, depósitos, retiros, etcétera</li>
       <li><span class="boton-de-verificacion"></span> Psicotrading: Mejora tu enfoque, disciplina y control emocional.</li>
@@ -265,7 +44,7 @@
       <li><span class="boton-de-verificacion"></span> Eliminación de miedos y adicciones: Corta con patrones autodestructivos.</li>
       <li><span class="boton-de-verificacion"></span> Sistema de hábitos, metas y lectura: Cimientos reales del éxito.</li>
     </ul>
-    <p><img src="https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png" alt="Chincheta" class="emoji"> Perfecta si querés consistencia y un entorno cercano que te potencie.</p>
+    <p style="text-align: center;"><span class="chincheta"></span> Perfecta si querés consistencia y un entorno cercano que te potencie.</p>
   </section>
 
 <div style="text-align: center;">
@@ -439,7 +218,7 @@
     <button class="accordion-button">
       <!-- Icono de efectivo -->
       <img src="https://em-content.zobj.net/source/apple/419/dollar-banknote_1f4b5.png" alt="Efectivo" class="emoji">
-      Efectivo zona Chacabuco (Prov. Bs. As)<strong> 15% OFF</strong>
+      Efectivo <strong> 15% OFF</strong> (Chacabuco)
     </button>
     <div class="accordion-content">
       <!-- Descripción del descuento por pago en efectivo -->
@@ -464,7 +243,7 @@
 
   <div style="
     width: 100%;
-    background-color: #181028;
+    background-color: #007BFF;
     color: #D9D9D9;
     text-align: center;
     padding: 16px;
@@ -534,6 +313,12 @@
           document.getElementById("dolar-blue").textContent =
             "⚠️ Error cargando el dólar";
           console.error("Error al obtener la cotización:", error);
+        });
+
+        /* TRANSICION DE ACORDEONES */
+
+        button.addEventListener('click', () => {
+          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
         });
     });
   </script>
