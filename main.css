@@ -99,6 +99,57 @@ header {
   font-weight: 800; /* Peso de la fuente */
 }
 
+.chincheta {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.emoji {
+  width: 25px; /* Ajusta el tamaño del emoji */
+  height: 25px; /* Mantiene la proporción */
+  vertical-align: middle; /* Alinea el emoji con el texto */
+  margin-right: 5px; /* Espacio entre el emoji y el texto */
+}
+
+.boton-de-verificacion {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.cohete {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/rocket_1f680.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.prohibido {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/prohibited_1f6ab.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
 .bloqueado {
   opacity: 0.4;
   border-left: 6px solid #ccc;
