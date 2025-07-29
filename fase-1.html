@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LA SALA - FASE 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.jpg">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -19,7 +20,7 @@
     }
 
     header {
-      background-color: #007BFF;
+      background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95));
       color: white;
       padding: 40px;
       text-align: center;
@@ -37,12 +38,18 @@
       text-align: center; /* Centrar títulos */
     }
 
-    .beneficios, .verificacion {
+    .beneficios, .verificacion, .ul {
       background: white;
       border-radius: 8px;
       padding: 20px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
+    }
+
+    .beneficios ul {
+      list-style-type: none; /* Eliminar las viñetas */
+      padding: 0; /* Eliminar el padding por defecto */
+      margin: 0; /* Eliminar el margen por defecto */
     }
 
     .accordion-button {
@@ -53,10 +60,7 @@
       width: 100%;
       text-align: left;
       cursor: pointer;
-      outline: none;
       font-size: 16px;
-      transition: background-color 0.3s;
-      border-radius: 5px;
       margin-top: 5px;
     }
 
@@ -150,6 +154,13 @@
       background-color: #218838;
     }
 
+    .emoji {
+      width: 20px; /* Ajusta el tamaño del emoji */
+      height: 20px; /* Mantiene la proporción */
+      vertical-align: middle; /* Alinea el emoji con el texto */
+      margin-right: 5px; /* Espacio entre el emoji y el texto */
+    }
+
     .texto-info {
       font-weight: bold;
       margin-top: 20px;
@@ -157,11 +168,11 @@
     }
 
     .precio-ars {
-      font-size: 1.5em; /* Tamaño aumentado para mayor énfasis */
+      font-size: 1.5em;
       font-weight: bold;
       color: #007BFF;
     }
-
+    
     .formulario {
       display: grid;
       gap: 10px;
@@ -214,35 +225,47 @@
     .metodo-pago a:hover {
       text-decoration: underline; /* Subrayar al pasar el ratón */
     }
+
+    .boton-de-verificacion {
+      display: inline-block; /* Permite que se ajuste al texto */
+      width: 20px; /* Ajusta el tamaño del ícono */
+      height: 20px; /* Mantiene la proporción */
+      background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
+      background-size: contain; /* Asegura que la imagen se ajuste */
+      background-repeat: no-repeat; /* Evita que se repita la imagen */
+      vertical-align: middle; /* Alinea verticalmente con el texto */
+      margin-right: 5px; /* Espacio entre el ícono y el texto */
+    }
   </style>
 </head>
 <body>
   <a href="index.html" class="back-button">Volver</a>
 
   <header>
-    <h1>Bienvenido a la Fase 1</h1>
+    <img src="logo.jpg" alt="Logo Gino Ostolaza" style="max-width: 150px; display: block; margin: 0 auto 20px; border-radius: 10px;">
+    <h1>BIENVENIDO/A A LA FASE 1</h1>
     <p>Transformá tu futuro con estrategias iniciales y acompañamiento personalizado</p>
   </header>
 
-  <h2 class="titulo-fase">Fase 1: Integrate al Proceso de Transformación</h2>
-  <p class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
+  <h2 class="titulo-fase">FASE 1: INTEGRATE AL PROCESO DE TRANSFORMACIÓN</h2>
+  <p style="text-align: center;" class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
   
   <section class="beneficios">
-    <h3>FASE 1 - Sala $50 USD</h3>
+    <h3>FASE 1 - COMUNIDAD $50 USD</h3>
     <p>Si estás comenzando y deseas construir una base sólida, esta fase es para ti. Incluye:</p>
     <ul class="benefits">
-      <li>✅ Estrategias probadas de trading: Aprende sistemas rentables con guías detalladas.</li>
-      <li>✅ Formación completa desde cero: Configuración, depósitos, retiros y verificación de cuenta.</li>
-      <li>✅ Psicotrading inicial: Mejora tu enfoque, disciplina y control emocional.</li>
-      <li>✅ Casos reales: Errores frecuentes y cómo evitarlos con ejemplos prácticos.</li>
-      <li>✅ Comunidad privada de Discord: Rodeate de personas que te impulsan al cambio.</li>
-      <li>✅ Reprogramación de identidad: Transforma tu mentalidad para lograr resultados duraderos.</li>
-      <li>✅ Técnica de manifestación consciente: Alinea tu visión con tus hábitos y tu entorno.</li>
-      <li>✅ Desarrollo personal integral: Convertite en la persona que admiras.</li>
-      <li>✅ Eliminación de miedos y adicciones: Corta con patrones autodestructivos.</li>
-      <li>✅ Sistema de hábitos, metas y lectura: Cimientos reales del éxito.</li>
+      <li><span class="boton-de-verificacion"></span> 2 estrategias rentables: Aprenderás sistemas rentables de trading</li>
+      <li><span class="boton-de-verificacion"></span> Formación completa desde cero: Configuración, depósitos, retiros, etcétera</li>
+      <li><span class="boton-de-verificacion"></span> Psicotrading: Mejora tu enfoque, disciplina y control emocional.</li>
+      <li><span class="boton-de-verificacion"></span> Casos reales: Errores frecuentes y cómo evitarlos con ejemplos prácticos.</li>
+      <li><span class="boton-de-verificacion"></span> Comunidad privada para que cambies tu entorno</li>
+      <li><span class="boton-de-verificacion"></span> Reprogramación : Transforma tu mentalidad para lograr resultados duraderos.</li>
+      <li><span class="boton-de-verificacion"></span> Técnica de manifestación consciente: Alinea tu visión con tus hábitos y tu entorno.</li>
+      <li><span class="boton-de-verificacion"></span> Desarrollo personal integral: Convertite en la persona que admiras.</li>
+      <li><span class="boton-de-verificacion"></span> Eliminación de miedos y adicciones: Corta con patrones autodestructivos.</li>
+      <li><span class="boton-de-verificacion"></span> Sistema de hábitos, metas y lectura: Cimientos reales del éxito.</li>
     </ul>
-    <p>📌 Perfecta si querés consistencia y un entorno cercano que te potencie.</p>
+    <p><img src="https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png" alt="Chincheta" class="emoji"> Perfecta si querés consistencia y un entorno cercano que te potencie.</p>
   </section>
 
 <div style="text-align: center;">
@@ -252,121 +275,188 @@
   <div id="dolar-blue" class="dolar-blue">Consultando cotización actual del dólar...</div>
 </div>
 
-  <section class="accordion">
-    <h3>Métodos de Pago</h3>
-    <div class="accordion-item metodo-pago">
-      <button class="accordion-button">Transferencia Bancaria Argentina (en pesos)</button>
-      <div class="accordion-content">
-        <p><strong>Monto a transferir:</strong></p>
-        <p class="precio-ars">
-          <span class="resultado-transferencia">Cargando...</span> ARS
-        </p>
-        <p class="nota">
-          💱 Se toma como referencia el valor de venta del dólar blue al momento de la transferencia.
-        </p>
-        <hr class="divider" />
-
-        <p><strong>🏦 Banco Galicia</strong></p>
-        <ul>
-          <li><strong>CBU:</strong> 0070100230004026120398</li>
-          <li><strong>Alias:</strong> GINO.OSTOLAZA.GON</li>
-          <li><strong>Nombre:</strong> Gonzalez Gino Ostolaza</li>
-          <li><strong>CUIT:</strong> 20-48637004-2</li>
-        </ul>
-
-        <hr class="divider" />
-
-        <p><strong>📲 Mercado Pago</strong></p>
-        <ul>
-          <li><strong>CVU:</strong> 0000003100052857370471</li>
-          <li><strong>Alias:</strong> gino.ostolaza</li>
-          <li><strong>Nombre:</strong> Gino Ostolaza González</li>
-          <li><strong>CUIT:</strong> 20-48637004-2</li>
-        </ul>
-
-        <p class="nota">✅ Podés usar el que te quede más cómodo. Una vez hecha la transferencia, enviá el comprobante.</p>
-      </div>
-    </div>
-
-    <div class="accordion-item metodo-pago">
-      <button class="accordion-button">Criptomonedas (Internacional y Argentina en dólares)</button>
-      <div class="accordion-content">
-        <p><strong>Monto a transferir:</strong></p>
-        <p class="precio-ars">$50,00 USD</p>
-
-        <hr class="divider" />
-
-        <p><strong>Opción 1 – Bitcoin (BTC)</strong></p>
-        <ul>
-          <li>Podés abonar en BTC a la dirección que te proporcionaré por mensaje directo.</li>
-        </ul>
-
-        <hr class="divider" />
-
-        <p><strong>Opción 2 – USDT</strong></p>
-        <ul>
-          <li>Se acepta USDT por red TRC20 o ERC20.</li>
-          <li>Indicar red preferida para enviarte la dirección correspondiente.</li>
-        </ul>
-
-        <hr class="divider" />
-
-        <p>📩 <strong>Contactame por Instagram:</strong> 
-          <a href="https://instagram.com/gino.ostolaza" target="_blank" rel="noopener noreferrer">
-            @gino.ostolaza
-          </a>
-        </p>
-        <p>Te enviaré los datos de pago exactos por mensaje directo.</p>
-      </div>
-    </div>
+<section class="accordion">
+  <!-- Título de la sección de métodos de pago -->
+  <h3>MÉTODOS DE PAGO</h3>
   
-    <div class="accordion-item metodo-pago">
-      <button class="accordion-button">Pagos Internacionales (en dólares)</button>
-      <div class="accordion-content">
-        <p><strong>Monto a transferir:</strong></p>
-        <p class="precio-ars">$50,00 USD</p>
+  <!-- Nota general sobre el proceso de pago -->
+  <p style="text-align: center;" class="nota-general">
+    <img src="https://em-content.zobj.net/source/apple/419/memo_1f4dd.png" alt="Cuaderno De Notas" class="emoji"> <strong>Nota importante:</strong> En todos los pagos, recordá escribir: <br>
+    <em>"Hola Gino! Acá te envío el pago de la fase 1, mi nombre es: [Tu nombre]"</em>
+  </p>
 
-        <hr class="divider" />
+  <!-- Primer método de pago: Banco argentino -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono del banco -->
+      <img src="https://em-content.zobj.net/source/apple/419/bank_1f3e6.png" alt="Banco" class="emoji" />
+      Banco argentino
+    </button>
+    <div class="accordion-content">
+      <!-- Monto a abonar -->
+      <p><strong>Monto a abonar:</strong> USD 50,00 o al tipo de cambio:</p>
+      <p><span class="resultado-transferencia">Cargando...</span> ARS</p>
 
-        <p><strong>Opción 1 – PayPal</strong></p>
-        <ul>
-          <li>
-            Hacé clic en el siguiente enlace para pagar directamente:
-            <br />
-            <a href="https://paypal.me/GinoOstolaza/50?note=Hola%20Gino!%20Ac%C3%A1%20te%20env%C3%ADo%20el%20pago%20de%20la%20fase%201,%20mi%20nombre%20es%3A%20" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-              Pagar con PayPal
-            </a>
-          </li>
-          <li>
-            El monto está precargado (50 USD). Asegurate de completar tu nombre en la nota.
-          </li>
-        </ul>
+      <hr class="divider" />
 
-        <hr class="divider" />
+      <!-- Detalles del Banco Galicia -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/bank_1f3e6.png" alt="Banco" class="emoji" /> Banco Galicia – Cuenta en dólares</strong></p>
+      <ul>
+        <li><strong>Alias:</strong> GINO.OSTOLAZA.GON</li>
+        <li><strong>Titular:</strong> Gonzalez Gino Ostolaza</li>
+        <li><strong>CBU:</strong> 0070100230004026120398</li>
+        <li><strong>CUIT:</strong> 20-48637004-2</li>
+      </ul>
 
-        <p><strong>Opción 2 – Skrill</strong></p>
-        <ul>
-          <li>Enviá 50 USD al siguiente correo de Skrill:</li>
-          <li><strong>ginitoostolaza1@gmail.com</strong></li>
-          <li>
-            En la nota del pago escribí: 
-            <br />
-            <em>"Hola Gino! Acá te envío el pago de la fase 1, mi nombre es: [Tu Nombre]"</em>
-          </li>
-        </ul>
-      </div>
+      <hr class="divider" />
+
+      <!-- Detalles de Mercado Pago -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/mobile-phone-with-arrow_1f4f2.png" alt="Mercado Pago" class="emoji" /> Mercado Pago – Cuenta en pesos (alternativa)</strong></p>
+      <ul>
+        <li><strong>Alias:</strong> gino.ostolaza</li>
+        <li><strong>Titular:</strong> Gino Ostolaza González</li>
+        <li><strong>CVU:</strong> 0000003100052857370471</li>
+        <li><strong>CUIT:</strong> 20-48637004-2</li>
+      </ul>
+
+      <!-- Nota adicional sobre el método de pago -->
+      <p class="nota">
+        <span class="boton-de-verificacion"></span>Podés usar la cuenta en dólares o la de Mercado Pago en pesos según tu comodidad. Una vez hecho el pago, enviá el comprobante por mensaje directo
+      </p>
     </div>
+  </div>
 
-    <div class="accordion-item metodo-pago">
-      <button class="accordion-button">Efectivo (15% OFF) para personas de la zona</button>
-      <div class="accordion-content">
-        <p>Abonando en efectivo tenes un <strong>15% OFF</strong></p>
-        <p class="precio-ars"><span id="resultado-efectivo">Cargando...</span> ARS</p>
-        <p class="nota">Valor descontado basado en el dólar blue - 15%.</p>
-      </div>
+  <!-- Segundo método de pago: Cripto -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono de cripto -->
+      <img src="https://em-content.zobj.net/source/apple/419/money-bag_1f4b0.png" alt="Cripto" class="emoji" />
+      Cripto (Bitcoin, Ethereum, USDT)
+    </button>
+    <div class="accordion-content">
+      <!-- Monto a abonar en cripto -->
+      <p><strong>Monto a abonar:</strong> USD 50,00</p>
+
+      <hr class="divider" />
+
+      <!-- Detalles para pagar con Bitcoin -->
+      <p><strong>₿ Bitcoin (BTC)</strong></p>
+      <ul>
+        <li>Transferí el monto a una dirección segura de BTC.</li>
+        <li>La wallet será enviada por mensaje directo para mayor seguridad.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <!-- Detalles para pagar con Ethereum -->
+      <p><strong>Ξ Ethereum (ETH)</strong></p>
+      <ul>
+        <li>Podés abonar en Ethereum.</li>
+        <li>Te enviaremos la dirección ETH al confirmar el pago.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <!-- Detalles para pagar con USDT -->
+      <p><strong>₮ USDT (Tether)</strong></p>
+      <ul>
+        <li>Aceptamos USDT por redes <strong>TRC20</strong> y <strong>ERC20</strong>.</li>
+        <li>Indicá qué red vas a usar para enviarte la wallet correspondiente.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <!-- Seguridad en transacciones -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/locked-with-key_1f510.png" alt="Candado Cerrado Y Llave" class="emoji"> Seguridad ante todo</strong></p>
+      <ul>
+        <li>Las direcciones se comparten exclusivamente por mensaje privado.</li>
+        <li>Así protegemos ambas partes ante posibles fraudes.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <!-- Información de contacto para solicitar la wallet -->
+      <p>
+        <img src="https://em-content.zobj.net/source/apple/419/envelope-with-arrow_1f4e9.png" alt="Contacto" class="emoji" />
+        <strong>Solicitá la wallet ahora mismo por mensaje directo:</strong><br />
+        Instagram →
+        <a href="https://instagram.com/ginoostolazaob" target="_blank" rel="noopener noreferrer">
+          @ginoostolazaob
+        </a>
+      </p>
+
+      <p class="nota">
+        <span class="boton-de-verificacion"></span>Transacción rápida y sin comisiones ocultas. Ideal si estás en el exterior o manejás activos digitales.
+      </p>
     </div>
-  </section>
+  </div>
 
+  <!-- Tercer método de pago: Pagos Internacionales -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono de pagos internacionales -->
+      <img src="https://em-content.zobj.net/source/apple/419/globe-with-meridians_1f310.png" alt="Globo" class="emoji" />
+      Pagos Internacionales (USD)
+    </button>
+    <div class="accordion-content">
+      <!-- Monto a abonar en pagos internacionales -->
+      <p><strong>Monto a abonar:</strong> USD 50,00</p>
+
+      <hr class="divider" />
+
+      <!-- Opción de pago con PayPal -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/credit-card_1f4b3.png" alt="Tarjeta de Crédito" class="emoji"> Opción 1: PayPal</strong></p>
+      <ul>
+        <li>Accedé directamente al link de pago:</li>
+        <li>
+          <a href="https://paypal.me/GinoOstolaza/" target="_blank" rel="noopener noreferrer">
+            paypal.me/GinoOstolaza
+          </a>
+        </li>
+        <li><img src="https://em-content.zobj.net/source/apple/419/warning_26a0-fe0f.png" alt="Advertencia" class="emoji"> Asegurate de colocar tu nombre completo en la sección de notas.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <!-- Opción de pago con Skrill -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/credit-card_1f4b3.png" alt="Tarjeta de Crédito" class="emoji"> Opción 2: Skrill</strong></p>
+      <ul>
+        <li>Enviá el monto a la siguiente dirección:</li>
+        <li><strong>ginitoostolaza1@gmail.com</strong></li>
+        <li><img src="https://em-content.zobj.net/source/apple/419/warning_26a0-fe0f.png" alt="Advertencia" class="emoji"> Indicá tu nombre completo en el campo de mensaje.</li>
+      </ul>
+
+      <hr class="divider" />
+
+      <p class="nota">
+        <img src="https://em-content.zobj.net/source/apple/419/envelope-with-arrow_1f4e9.png" alt="Contacto" class="emoji" /> Para confirmar tu pago o ante cualquier duda, podés contactarme por Instagram.
+      </p>
+    </div>
+  </div>
+
+  <!-- Cuarto método de pago: Efectivo -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono de efectivo -->
+      <img src="https://em-content.zobj.net/source/apple/419/dollar-banknote_1f4b5.png" alt="Efectivo" class="emoji">
+      Efectivo zona Chacabuco (Prov. Bs. As)<strong> 15% OFF</strong>
+    </button>
+    <div class="accordion-content">
+      <!-- Descripción del descuento por pago en efectivo -->
+      <p><strong>Monto a abonar: </strong><span id="resultado-efectivo">Cargando...</span> ARS
+      </p>
+      
+      <hr class="divider" />
+      
+      <p>Realizando el pago en efectivo obtenés un <strong>15% de descuento</strong> sobre el valor base.</p>
+      
+      <p class="nota">El valor con descuento se calcula automáticamente según la cotización del dólar blue.</p>
+
+      <hr class="divider" />
+    </div>
+  </div>
+</section>
+  
   <p class="texto-info">Si ya realizaste el pago o estás por hacerlo y tenés alguna duda, podés comunicarte directamente conmigo. Estoy para ayudarte en todo el proceso.</p>
   <p class="texto-info">
     <a href="https://instagram.com/ginoostolazaob" target="_blank" style="color: #4be213; text-decoration: underline;">Hacé clic aquí para hablarme por Instagram</a>.
@@ -417,7 +507,7 @@
 
           // Mostrar en encabezado principal
           document.getElementById("dolar-blue").textContent =
-            `💸 Dólar Blue hoy (venta): $${dolarBlue.toFixed(2)} ARS`;
+            `Dólar Blue hoy (venta): $${dolarBlue.toFixed(2)} ARS`;
 
           // Cálculo de valores en ARS
           const usdBase = 50;
