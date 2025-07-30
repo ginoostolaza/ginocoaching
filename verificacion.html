@@ -14,7 +14,7 @@
     }
 
     body {
-      background: linear-gradient(to right, #201139, #6C23DA);
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -23,7 +23,7 @@
     }
 
     .container {
-      background-color: #2a184a;
+      background-color: #0d1117;
       padding: 2.5rem;
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(0,0,0,0.4);
@@ -33,7 +33,11 @@
     }
 
     h1 {
-      font-size: 1.8rem;
+        font-size: 1.8rem; /* Tamaño de fuente */
+        background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado */
+    -webkit-background-clip: text; /* Recortar fondo en el texto */
+    -webkit-text-fill-color: transparent; /* Texto transparente */
+    font-weight: 800; /* Peso de la fuente */
       margin-bottom: 1.5rem;
     }
 
@@ -48,8 +52,8 @@
     }
 
     button {
-      background-color: #4be213;
-      color: #201139;
+      background-color: #0072ff;
+      color: #ffffff;
       font-weight: 600;
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
