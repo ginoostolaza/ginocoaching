@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificación de Acceso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #201139, #6C23DA);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .container {
+      background-color: #2a184a;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      outline: none;
+    }
+
+    button {
+      background-color: #4be213;
+      color: #201139;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3bc20f;
+    }
+
+    .error {
+      color: #ff8c00;
+      margin-top: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ingresa tu código de acceso para la fase 1</h1>
+    <form id="tokenForm">
+      <input type="text" id="token" placeholder="Token" required>
+      <button type="submit">Acceder</button>
+      <p id="mensajeError" class="error"></p>
+    </form>
+  </div>
+
+  <script>
+    const tokensValidos = ["ABC123", "GINO456", "TOKEN789"];
+    const form = document.getElementById("tokenForm");
+    const mensajeError = document.getElementById("mensajeError");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const tokenIngresado = document.getElementById("token").value.trim();
+      if (tokensValidos.includes(tokenIngresado)) {
+        window.location.href = "contenido/index.html";
+      } else {
+        mensajeError.textContent = "Token inválido. Revisá tu código o contactá a Gino.";
+      }
+    });
+  </script>
+</body>
+</html>
