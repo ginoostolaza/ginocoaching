@@ -1,452 +1,328 @@
-body { 
-      font-family: 'Inter', sans-serif; /* Fuente del cuerpo */
-      background-color: #0d1117; /* Color de fondo */
-      color: #ffffff; /* Color del texto */
-      line-height: 1.6; /* Altura de línea */
-      /* <!-- font-family: 'Inter', sans-serif;--> */
-    }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA SALA - FASE 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.jpg" sizes="32x32">
+  <link rel="stylesheet" href="pasareladepago1.css"/>
+  <meta name="description" content="Transformá tu futuro aprendiendo trading, desarrollo personal y técnicas de manifestación junto a Gino Ostolaza.">
+  <meta property="og:title" content="La Sala - Fase 1">
+  <meta property="og:image" content="logo.jpg">
+  <meta property="og:description" content="Estrategias, comunidad y transformación personal. Ingresá ahora.">
+  <meta name="theme-color" content="#007BFF">
+</head>
+<body>
+  <a href="index.html" class="back-button">← Volver atrás</a>
 
-    .logo-img {
-      max-width: 150px;
-      display: block;
-      margin: 0 auto 20px;
-      border-radius: 10px;
-    }
-    .centrar-texto {
-      text-align: center;
-    }
+  <header class="hero">
+    <div class="hero-content">
+      <img src="logo.jpg" alt="Logo Gino Ostolaza" class="logo-img">
+      <div class="hero-text">
+        <h1>BIENVENIDA/O A LA FASE 1</h1>
+        <p>Transformá tu futuro con estrategias iniciales y acompañamiento personalizado</p>
+      </div>
+    </div>
+  </header>
 
-    header {
-      background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95)), url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; /* Fondo con imagen */
-      height: 100vh; /* Altura completa de la ventana */
-      display: flex; /* Usar flexbox */
-      align-items: center; /* Alinear verticalmente */
-      justify-content: center; /* Centrar horizontalmente */
-      text-align: center; /* Alineación centrada */
-      padding: 2rem; /* Espaciado interno */
-    }
+  <h2 class="titulo-fase">FASE 1: INTEGRATE AL PROCESO DE TRANSFORMACIÓN</h2>
+  <p class="subtitulo-fase">Descubrí el camino para operar con confianza, crear tu nueva identidad y manifestar tu propósito.</p>
+  
+  <section class="beneficios">
+    <h3>FASE 1 - COMUNIDAD $50 USD</h3>
+    <p style="text-align: center;">Si estás comenzando y deseas construir una base sólida, esta fase es para ti. Incluye:</p>
+    <ul class="beneficios">
+      <li><span class="boton-de-verificacion"></span> 2 estrategias rentables: Aprenderás sistemas rentables de trading</li>
+      <li><span class="boton-de-verificacion"></span> Formación completa desde cero: Configuración, depósitos, retiros, etcétera</li>
+      <li><span class="boton-de-verificacion"></span> Psicotrading: Mejora tu enfoque, disciplina y control emocional.</li>
+      <li><span class="boton-de-verificacion"></span> Casos reales: Errores frecuentes y cómo evitarlos con ejemplos prácticos.</li>
+      <li><span class="boton-de-verificacion"></span> Comunidad privada para que cambies tu entorno</li>
+      <li><span class="boton-de-verificacion"></span> Reprogramación : Transforma tu mentalidad para lograr resultados duraderos.</li>
+      <li><span class="boton-de-verificacion"></span> Técnica de manifestación consciente: Alinea tu visión con tus hábitos y tu entorno.</li>
+      <li><span class="boton-de-verificacion"></span> Desarrollo personal integral: Convertite en la persona que admiras.</li>
+      <li><span class="boton-de-verificacion"></span> Eliminación de miedos y adicciones: Corta con patrones autodestructivos.</li>
+      <li><span class="boton-de-verificacion"></span> Sistema de hábitos, metas y lectura: Cimientos reales del éxito.</li>
+    </ul>
+    <p style="text-align: center;"><span class="chincheta"></span> Perfecta si querés consistencia y un entorno cercano que te potencie.</p>
+  </section>
 
-    header h1 {
-      font-size: 3rem; /* Tamaño de fuente */
-      background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado */
-      -webkit-background-clip: text; /* Recortar fondo en el texto */
-      -webkit-text-fill-color: transparent; /* Texto transparente */
-      font-weight: 800; /* Peso de la fuente */
-    }
+<div style="text-align: center;">
+  <p style="color: #555; margin-top: 10px;">
+    En Argentina, se utiliza el dólar blue como referencia para la cotización de monedas extranjeras.
+  </p>
+  <div id="dolar-blue" class="dolar-blue">Consultando cotización actual del dólar...</div>
+</div>
 
-    /* Estilo principsal del encabezado */
-    header {
-      background: 
-        linear-gradient(to bottom, rgba(13,17,23,0.92), rgba(13,17,23,0.96)), 
-        url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') 
-        center/cover no-repeat;
-      min-height: 100vh;
+<section class="accordion">
+  <!-- Título de la sección de métodos de pago -->
+  <h3>MÉTODOS DE PAGO</h3>
+  
+  <!-- Nota general sobre el proceso de pago -->
+  <p style="text-align: center;" class="nota-general">
+    <img src="https://em-content.zobj.net/source/apple/419/memo_1f4dd.png" alt="Cuaderno De Notas" class="emoji"> <strong>Nota importante:</strong> En todos los pagos, recordá escribir: <br>
+    <em>"Hola Gino! Acá te envío el pago de la fase 1, mi nombre es: [Tu nombre]"</em>
+  </p>
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  <!-- Primer método de pago: Banco argentino -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono del banco -->
+      <img src="https://em-content.zobj.net/source/apple/419/bank_1f3e6.png" alt="Banco" class="emoji" />
+      Banco argentino
+    </button>
+    <div class="accordion-content">
+      <!-- Monto a abonar -->
+      <p><strong>Monto a abonar:</strong> USD 50,00 o al tipo de cambio:</p>
+      <p><span class="resultado-transferencia">Cargando...</span> ARS</p>
 
-      justify-content: flex-start; /* 👈 ESTO ES CLAVE */
+      <hr class="divider" />
 
-      text-align: center;
-      padding: 6rem 1.5rem 3rem; /* 👈 MÁS ESPACIO ARRIBA, MENOS ABAJO */
-      color: #f0f0f0;
-      position: relative;
-    }
+      <!-- Detalles del Banco Galicia -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/bank_1f3e6.png" alt="Banco" class="emoji" /> Banco Galicia – Cuenta en dólares</strong></p>
+      <ul>
+        <li><strong>Alias:</strong> GINO.OSTOLAZA.GON</li>
+        <li><strong>Titular:</strong> Gonzalez Gino Ostolaza</li>
+        <li><strong>CBU:</strong> 0070100230004026120398</li>
+        <li><strong>CUIT:</strong> 20-48637004-2</li>
+      </ul>
 
-    /* Logo con tamaño y sombra para destacar */
-    .logo-img {
-      max-width: 120px;
-      margin-bottom: 1.5rem;
-      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-    }
+      <hr class="divider" />
 
-    /* Título principal */
-    header h1 {
-      font-size: 3rem;
-      background: linear-gradient(90deg, #6C23DA, #00c6ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 900;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
-    }
+      <!-- Detalles de Mercado Pago -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/mobile-phone-with-arrow_1f4f2.png" alt="Mercado Pago" class="emoji" /> Mercado Pago – Cuenta en pesos (alternativa)</strong></p>
+      <ul>
+        <li><strong>Alias:</strong> gino.ostolaza</li>
+        <li><strong>Titular:</strong> Gino Ostolaza González</li>
+        <li><strong>CVU:</strong> 0000003100052857370471</li>
+        <li><strong>CUIT:</strong> 20-48637004-2</li>
+      </ul>
 
-    /* Subtítulo */
-    header p {
-      font-size: 1.25rem;
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: #d1d1d1;
-    }
+      <!-- Nota adicional sobre el método de pago -->
+      <p class="nota">
+        <span class="boton-de-verificacion"></span>Podés usar la cuenta en dólares o la de Mercado Pago en pesos según tu comodidad. Una vez hecho el pago, enviá el comprobante por mensaje directo
+      </p>
+    </div>
+  </div>
 
-    h3 {
-      color: #007BFF;
-      text-align: center; /* Centrar títulos */
-    }
+  <!-- Segundo método de pago: Cripto -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono de cripto -->
+      <img src="https://em-content.zobj.net/source/apple/419/money-bag_1f4b0.png" alt="Cripto" class="emoji" />
+      Cripto (Bitcoin, Ethereum, USDT)
+    </button>
+    <div class="accordion-content">
+      <!-- Monto a abonar en cripto -->
+      <p><strong>Monto a abonar:</strong> USD 50,00</p>
 
-    h2 {
-      font-size: 2.5rem; /* Tamaño de fuente */
-      color: #00c6ff; /* Color del texto */
-      text-align: center; /* Alineación centrada */
-      font-weight: 800; /* Peso de la fuente */
-    }
+      <hr class="divider" />
 
-    section h2 {
-      font-size: 2.5rem; /* Tamaño de fuente */
-      color: #00c6ff; /* Color del texto */
-      text-align: center; /* Alineación centrada */
-      font-weight: 800; /* Peso de la fuente */
-    }
+      <!-- Detalles para pagar con Bitcoin -->
+      <p><strong>₿ Bitcoin (BTC)</strong></p>
+      <ul>
+        <li>Transferí el monto a una dirección segura de BTC.</li>
+        <li>La wallet será enviada por mensaje directo para mayor seguridad.</li>
+      </ul>
 
-    /* Estilos para las secciones */
-    section {
-      padding: 3rem 2rem; /* Espaciado interno */
-      max-width: 900px; /* Ancho máximo */
-      margin: auto; /* Centrar horizontalmente */
-    }
+      <hr class="divider" />
 
-    .beneficios, .verificacion, .ul {
-      background: #161b22;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-    }
+      <!-- Detalles para pagar con Ethereum -->
+      <p><strong>Ξ Ethereum (ETH)</strong></p>
+      <ul>
+        <li>Podés abonar en Ethereum.</li>
+        <li>Te enviaremos la dirección ETH al confirmar el pago.</li>
+      </ul>
 
-    .beneficios ul {
-      list-style-type: none; /* Eliminar las viñetas */
-      padding: 0; /* Eliminar el padding por defecto */
-      margin: 0; /* Eliminar el margen por defecto */
-      text-align: center;
-    }
+      <hr class="divider" />
 
-    /* Botones de acordeón */
-    .accordion-button {
-      background-color: #0056b3; /* Azul profesional */
-      color: #fff;
-      border: none;
-      padding: 12px 16px;
-      width: 100%;
-      text-align: left;
-      cursor: pointer;
-      font-size: 1rem;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-      margin-bottom: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      border-radius: 10px;
-      transition: all 0.3s ease;
-    }
+      <!-- Detalles para pagar con USDT -->
+      <p><strong>₮ USDT (Tether)</strong></p>
+      <ul>
+        <li>Aceptamos USDT por redes <strong>TRC20</strong> y <strong>ERC20</strong>.</li>
+        <li>Indicá qué red vas a usar para enviarte la wallet correspondiente.</li>
+      </ul>
 
-    .accordion-button:hover {
-      transform: translateY(-2px);
-      background-color: #003f7f;
-    }
+      <hr class="divider" />
 
-    .accordion-content {
-      transition: all 0.5s ease;
-      overflow: hidden;
-      padding: 15px;
-      display: none;
-      border-top: 1px solid #ccc;
-      margin-top: 5px;
-    }
+      <!-- Seguridad en transacciones -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/locked-with-key_1f510.png" alt="Candado Cerrado Y Llave" class="emoji"> Seguridad ante todo</strong></p>
+      <ul>
+        <li>Las direcciones se comparten exclusivamente por mensaje privado.</li>
+        <li>Así protegemos ambas partes ante posibles fraudes.</li>
+      </ul>
 
-    .divider {
-      margin: 15px 0;
-    }
+      <hr class="divider" />
 
-    .footer {
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      border-top: 1px solid #222;
-    }
+      <!-- Información de contacto para solicitar la wallet -->
+      <p>
+        <img src="https://em-content.zobj.net/source/apple/419/envelope-with-arrow_1f4e9.png" alt="Contacto" class="emoji" />
+        <strong>Solicitá la wallet ahora mismo por mensaje directo:</strong><br />
+        Instagram →
+        <a href="https://instagram.com/ginoostolazaob" target="_blank" rel="noopener noreferrer">
+          @ginoostolazaob
+        </a>
+      </p>
 
-    .footer .footer-columns {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      max-width: 1200px; /* Ancho máximo para el contenido */
-      margin: 0 auto; /* Centrar el contenedor */
-      padding: 20px 10px; /* Espaciado interno */
-    }
+      <p class="nota">
+        <span class="boton-de-verificacion"></span>Transacción rápida y sin comisiones ocultas. Ideal si estás en el exterior o manejás activos digitales.
+      </p>
+    </div>
+  </div>
 
-    /* Contenedor de beneficios u otros bloques */
-    section, .beneficios, .contenido {
-      padding: 20px 15px;
-      margin: 0 auto;
-      width: 100%;
-      text-align: center;
-      border-radius: 14px;
-      background-color: #161b22;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
+  <!-- Tercer método de pago: Pagos Internacionales -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono de pagos internacionales -->
+      <img src="https://em-content.zobj.net/source/apple/419/globe-with-meridians_1f310.png" alt="Globo" class="emoji" />
+      Pagos Internacionales (USD)
+    </button>
+    <div class="accordion-content">
+      <!-- Monto a abonar en pagos internacionales -->
+      <p><strong>Monto a abonar:</strong> USD 50,00</p>
 
-    .footer h4 {
-      margin-bottom: 12px;
-      font-weight: 600;
-      color: white;
-    }
+      <hr class="divider" />
 
-    .footer p, .footer ul {
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
-    }
+      <!-- Opción de pago con PayPal -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/credit-card_1f4b3.png" alt="Tarjeta de Crédito" class="emoji"> Opción 1: PayPal</strong></p>
+      <ul>
+        <li>Accedé directamente al link de pago:</li>
+        <li>
+          <a href="https://paypal.me/GinoOstolaza/" target="_blank" rel="noopener noreferrer">
+            paypal.me/GinoOstolaza
+          </a>
+        </li>
+        <li><img src="https://em-content.zobj.net/source/apple/419/warning_26a0-fe0f.png" alt="Advertencia" class="emoji"> Asegurate de colocar tu nombre completo en la sección de notas.</li>
+      </ul>
 
-    .footer ul {
-      list-style: none;
-      padding: 0;
-    }
+      <hr class="divider" />
 
-    .token-button {
-      background-color: #0d1117; /* Color de fondo */
-      color: #0d1117; /* Color del texto */
-      padding: 1rem 2rem; /* Espaciado interno */
-      border-radius: 8px; /* Bordes redondeados */
-      font-weight: bold; /* Peso de la fuente */
-      text-decoration: none; /* Sin subrayado */
-      display: inline-flex; /* Alinea texto y flechas horizontalmente */
-      align-items: center; /* Centra verticalmente */
-      gap: 0.5rem; /* Espacio entre texto y flechas */
-      margin-top: 1rem; /* Margen superior */
-      margin-left: 80rem;
-      transition: background-color 0.3s ease; /* Transición suave para el fondo */
-      font-size: 0.1rem; /* Tamaño de fuente */
-      cursor: pointer; /* Cambiar cursor al pasar */
-    }
+      <!-- Opción de pago con Skrill -->
+      <p><strong><img src="https://em-content.zobj.net/source/apple/419/credit-card_1f4b3.png" alt="Tarjeta de Crédito" class="emoji"> Opción 2: Skrill</strong></p>
+      <ul>
+        <li>Enviá el monto a la siguiente dirección:</li>
+        <li><strong>ginitoostolaza1@gmail.com</strong></li>
+        <li><img src="https://em-content.zobj.net/source/apple/419/warning_26a0-fe0f.png" alt="Advertencia" class="emoji"> Indicá tu nombre completo en el campo de mensaje.</li>
+      </ul>
 
-    .back-button {
-      background-color: #0072ff; /* Color de fondo */
-      color: #fff; /* Color del texto */
-      padding: 1rem 2rem; /* Espaciado interno */
-      border-radius: 8px; /* Bordes redondeados */
-      font-weight: bold; /* Peso de la fuente */
-      text-decoration: none; /* Sin subrayado */
-      display: inline-flex; /* Alinea texto y flechas horizontalmente */
-      align-items: center; /* Centra verticalmente */
-      gap: 0.5rem; /* Espacio entre texto y flechas */
-      margin-top: 1rem; /* Margen superior */
-      margin-left: 1rem;
-      transition: background-color 0.3s ease; /* Transición suave para el fondo */
-      font-size: 1rem; /* Tamaño de fuente */
-      cursor: pointer; /* Cambiar cursor al pasar */
-    }
+      <hr class="divider" />
 
-    .back-button:hover {
-      background-color: #005dd8; /* Color de fondo al pasar el ratón */
-    }
+      <p class="nota">
+        <img src="https://em-content.zobj.net/source/apple/419/envelope-with-arrow_1f4e9.png" alt="Contacto" class="emoji" /> Para confirmar tu pago o ante cualquier duda, podés contactarme por Instagram.
+      </p>
+    </div>
+  </div>
 
-    .button {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      transition: background-color 0.3s;
-    }
+  <!-- Cuarto método de pago: Efectivo -->
+  <div class="accordion-item metodo-pago">
+    <button class="accordion-button">
+      <!-- Icono de efectivo -->
+      <img src="https://em-content.zobj.net/source/apple/419/dollar-banknote_1f4b5.png" alt="Efectivo" class="emoji">
+      Efectivo <strong> 15% OFF</strong> (Chacabuco)
+    </button>
+    <div class="accordion-content">
+      <!-- Descripción del descuento por pago en efectivo -->
+      <p><strong>Monto a abonar: </strong><span id="resultado-efectivo">Cargando...</span> ARS
+      </p>
+      
+      <hr class="divider" />
+      
+      <p>Realizando el pago en efectivo obtenés un <strong>15% de descuento</strong> sobre el valor base.</p>
+      
+      <p class="nota">El valor con descuento se calcula automáticamente según la cotización del dólar blue.</p>
 
-    .button:hover {
-      background-color: #218838;
-    }
+      <hr class="divider" />
+    </div>
+  </div>
+</section>
+  
+  <p class="texto-info">Si ya realizaste el pago o estás por hacerlo y tenés alguna duda, podés comunicarte directamente conmigo. Estoy para ayudarte en todo el proceso.</p>
+  <p class="texto-info">
+    <a href="https://instagram.com/ginoostolazaob" target="_blank" style="color: #4be213; text-decoration: underline;">Hacé clic aquí para hablarme por Instagram</a>.
+  </p>
 
-    .emoji {
-      width: 20px; /* Ajusta el tamaño del emoji */
-      height: 20px; /* Mantiene la proporción */
-      vertical-align: middle; /* Alinea el emoji con el texto */
-      margin-right: 5px; /* Espacio entre el emoji y el texto */
-    }
+  <a href="verificacion.html" class="token-button"></a>
 
-    .texto-info {
-      font-weight: bold;
-      margin-top: 20px;
-      text-align: center; /* Centrar texto informativo */
-    }
-
-    .precio-ars {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #007BFF;
-    }
-    
-    .formulario {
-      display: grid;
-      gap: 10px;
-    }
-
-    .formulario label {
-      font-weight: bold;
-    }
-
-    .formulario input[type="text"],
-    .formulario input[type="email"],
-    .formulario input[type="file"] {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .formulario input[type="file"] {
-      padding: 5px;
-    }
-
-    .metodo-pago {
-      margin-bottom: 20px;
-    }
-
-    .metodo-pago h4 {
-      color: #007BFF;
-    }
-
-    .metodo-pago p {
-      margin: 0;
-    }
-
-    .metodo-pago ul {
-      padding-left: 0; /* Eliminar padding en la lista */
-      list-style-type: none; /* Eliminar viñetas */
-    }
-
-    .metodo-pago li {
-      margin-bottom: 10px; /* Espaciado entre elementos de la lista */
-    }
-
-    .metodo-pago a {
-      color: #007BFF;
-      text-decoration: none; /* Quitar subrayado */
-    }
-
-    .metodo-pago a:hover {
-      text-decoration: underline; /* Subrayar al pasar el ratón */
-    }
-
-    section {
-      padding: 40px 20px;
-      margin-bottom: 40px;
-    }
-
-    h1, h2, h3 {
-      margin-bottom: 20px;
-    }
-
-    .boton-de-verificacion {
-      display: inline-block; /* Permite que se ajuste al texto */
-      width: 20px; /* Ajusta el tamaño del ícono */
-      height: 20px; /* Mantiene la proporción */
-      background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
-      background-size: contain; /* Asegura que la imagen se ajuste */
-      background-repeat: no-repeat; /* Evita que se repita la imagen */
-      vertical-align: middle; /* Alinea verticalmente con el texto */
-      margin-right: 5px; /* Espacio entre el ícono y el texto */
-    }
-
-    .chincheta {
-      display: inline-block; /* Permite que se ajuste al texto */
-      width: 20px; /* Ajusta el tamaño del ícono */
-      height: 20px; /* Mantiene la proporción */
-      background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png');
-      background-size: contain; /* Asegura que la imagen se ajuste */
-      background-repeat: no-repeat; /* Evita que se repita la imagen */
-      vertical-align: middle; /* Alinea verticalmente con el texto */
-      margin-right: 5px; /* Espacio entre el ícono y el texto */
-    }
-
-
-    .subtitulo-fase{
-      text-align: center;
-    }
-
-/* =========================
-   Responsive - Dispositivos pequeños (≤ 768px)
-   ========================= */
-@media (max-width: 768px) {
-
-  header {
-    padding: 4rem 1rem 2rem;
-  }
-
-  /* Títulos principales */
-  header h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 10px 0;
-    line-height: 1.2;
-  }
-
-  /* Subtítulos */
-  h2, h3 {
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  /* Botones de acordeón */
-  .accordion-button {
-    background-color: #0056b3; /* Azul profesional */
-    color: #fff;
-    border: none;
-    padding: 12px 16px;
+  <div style="
     width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    margin-bottom: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-  }
-
-  .accordion-button:hover {
-    transform: translateY(-2px);
-    background-color: #003f7f;
-  }
-
-  /* Contenedor de beneficios u otros bloques */
-  section, .beneficios, .contenido {
-    padding: 20px 15px;
-    margin: 0 auto;
-    width: 100%;
+    background-color: #007BFF;
+    color: #D9D9D9;
     text-align: center;
-    border-radius: 14px;
-    background-color: #161b22;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  }
+    padding: 16px;
+    font-size: 14px;
+  ">
+    © <span id="anio-actual"></span> Gino Ostolaza. Todos los derechos reservados.
+  </div>
 
-  /* Alineación de párrafos y textos */
-  p, li {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 12px;
-  }
+  <script>
+    // Mostrar año actual en el pie de página
+    document.getElementById('anio-actual').textContent = new Date().getFullYear();
 
-  /* Ajuste de imágenes o íconos si los hubiera */
-  img, svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+    // Previsualización de imagen del comprobante
+    function previewImage(event) {
+      const preview = document.getElementById('preview');
+      const file = event.target.files[0];
+      if (file && file.type.startsWith('image/')) {
+        preview.src = URL.createObjectURL(file);
+        preview.style.display = 'block';
+      } else {
+        preview.style.display = 'none';
+      }
+    }
 
-  /* Navegación u otros elementos si fueran necesarios */
-  nav, .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-  }
-}
+    // Esperar a que el DOM esté completamente cargado
+    document.addEventListener("DOMContentLoaded", () => {
+      // Funcionalidad de acordeón (mostrar/ocultar)
+      document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+
+      // Obtener cotización actual del dólar blue
+      fetch("https://api.bluelytics.com.ar/v2/latest")
+        .then(response => response.json())
+        .then(data => {
+          const dolarBlue = data.blue.value_sell; // Valor de venta
+
+          // Mostrar en encabezado principal
+          document.getElementById("dolar-blue").textContent =
+            `Dólar Blue hoy (venta): $${dolarBlue.toFixed(2)} ARS`;
+
+          // Cálculo de valores en ARS
+          const usdBase = 50;
+
+          // 1. Transferencia bancaria (100% del valor)
+          const resultadoTransferencia = usdBase * dolarBlue;
+
+          // 2. Efectivo (-15% de descuento)
+          const resultadoEfectivo = resultadoTransferencia * 0.85;
+
+          // Formato de número con comas
+          const formatNumber = (num) => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+          // Mostrar resultados en los spans
+          const spansTransferencia = document.querySelectorAll(".resultado-transferencia");
+          spansTransferencia.forEach(span => {
+            span.textContent = `$${formatNumber(Math.round(resultadoTransferencia))}`; // Redondear y formatear
+          });
+
+          // Actualizar el precio en efectivo
+          document.getElementById("resultado-efectivo").textContent = `$${formatNumber(Math.round(resultadoEfectivo))}`; // Redondear y formatear
+        })
+        .catch(error => {
+          document.getElementById("dolar-blue").textContent =
+            "⚠️ Error cargando el dólar";
+          console.error("Error al obtener la cotización:", error);
+        });
+
+        /* TRANSICION DE ACORDEONES */
+
+        button.addEventListener('click', () => {
+          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+        });
+    });
+  </script>
+</body>
+</html>
