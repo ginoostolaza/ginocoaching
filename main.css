@@ -110,6 +110,17 @@ header {
   margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
 
+.fuego {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/fire_1f525.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: 2px; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
 .emoji {
   width: 25px; /* Ajusta el tamaño del emoji */
   height: 25px; /* Mantiene la proporción */
@@ -292,6 +303,12 @@ section h2 {
   margin-bottom: 2rem; /* Margen inferior */
   font-style: italic; /* Cursiva */
   border: 1px solid rgba(255,255,255,0.05); /* Borde */
+}
+
+.favicon{
+  border-radius: 20px;
+  width: auto;
+  height: auto;
 }
 
 /* Estilos para los elementos de la FAQ */
