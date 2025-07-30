@@ -34,22 +34,24 @@ body {
       font-weight: 800; /* Peso de la fuente */
     }
 
-    /* Estilo principal del encabezado */
+    /* Estilo principsal del encabezado */
     header {
       background: 
         linear-gradient(to bottom, rgba(13,17,23,0.92), rgba(13,17,23,0.96)), 
         url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') 
         center/cover no-repeat;
       min-height: 100vh;
+
       display: flex;
-      flex-direction: column; /* Acomoda verticalmente los elementos */
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+
+      justify-content: flex-start; /* 👈 ESTO ES CLAVE */
+
       text-align: center;
-      padding: 3rem 1.5rem;
+      padding: 6rem 1.5rem 3rem; /* 👈 MÁS ESPACIO ARRIBA, MENOS ABAJO */
       color: #f0f0f0;
       position: relative;
-      overflow: hidden;
     }
 
     /* Logo con tamaño y sombra para destacar */
@@ -202,7 +204,23 @@ body {
       padding: 0;
     }
 
-    /* Estilo del botón primario */
+    .token-button {
+      background-color: #0d1117; /* Color de fondo */
+      color: #0d1117; /* Color del texto */
+      padding: 1rem 2rem; /* Espaciado interno */
+      border-radius: 8px; /* Bordes redondeados */
+      font-weight: bold; /* Peso de la fuente */
+      text-decoration: none; /* Sin subrayado */
+      display: inline-flex; /* Alinea texto y flechas horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      gap: 0.5rem; /* Espacio entre texto y flechas */
+      margin-top: 1rem; /* Margen superior */
+      margin-left: 80rem;
+      transition: background-color 0.3s ease; /* Transición suave para el fondo */
+      font-size: 0.1rem; /* Tamaño de fuente */
+      cursor: pointer; /* Cambiar cursor al pasar */
+    }
+
     .back-button {
       background-color: #0072ff; /* Color de fondo */
       color: #fff; /* Color del texto */
@@ -214,8 +232,9 @@ body {
       align-items: center; /* Centra verticalmente */
       gap: 0.5rem; /* Espacio entre texto y flechas */
       margin-top: 1rem; /* Margen superior */
+      margin-left: 1rem;
       transition: background-color 0.3s ease; /* Transición suave para el fondo */
-      font-size: 1.1rem; /* Tamaño de fuente */
+      font-size: 1rem; /* Tamaño de fuente */
       cursor: pointer; /* Cambiar cursor al pasar */
     }
 
@@ -352,6 +371,10 @@ body {
    Responsive - Dispositivos pequeños (≤ 768px)
    ========================= */
 @media (max-width: 768px) {
+
+  header {
+    padding: 4rem 1rem 2rem;
+  }
 
   /* Títulos principales */
   header h1 {
