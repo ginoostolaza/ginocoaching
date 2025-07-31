@@ -99,6 +99,32 @@ header {
   font-weight: 800; /* Peso de la fuente */
 }
 
+/*MENU HAMBURGUESA EMOJI*/
+
+.hamburguer-abrir-menu {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 35px; /* Ajusta el tamaño del ícono */
+  height: 35px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/closed-mailbox-with-raised-flag_1f4eb.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.hamburguer-cerrar-menu {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 35px; /* Ajusta el tamaño del ícono */
+  height: 35px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/open-mailbox-with-raised-flag_1f4ec.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/*EMOJIS*/
+
 .chincheta {
   display: inline-block; /* Permite que se ajuste al texto */
   width: 25px; /* Ajusta el tamaño del ícono */
