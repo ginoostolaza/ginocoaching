@@ -1,68 +1,49 @@
+/* =========================
+   Estilos Generales
+   ========================= */
 body { 
-      font-family: 'Inter', sans-serif; /* Fuente del cuerpo */
-      background-color: #0d1117; /* Color de fondo */
-      color: #ffffff; /* Color del texto */
-      line-height: 1.6; /* Altura de línea */
-      /* <!-- font-family: 'Inter', sans-serif;--> */
-    }
+    font-family: 'Poppins', sans-serif; /* Fuente del cuerpo */
+    background-color: #0d1117; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
 
-    .logo-img {
-      max-width: 150px;
-      display: block;
-      margin: 0 auto 20px;
-      border-radius: 10px;
-    }
-    .centrar-texto {
-      text-align: center;
-    }
+/* =========================
+   Estilos para el Logo
+   ========================= */
+.logo-img {
+    max-width: 150px; /* Ancho máximo del logo */
+    display: block; /* Mostrar como bloque */
+    margin: 0 auto 20px; /* Centrar y margen inferior */
+    border-radius: 10px; /* Bordes redondeados */
+}
 
-    header {
-      background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95)), url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; /* Fondo con imagen */
-      height: 100vh; /* Altura completa de la ventana */
-      display: flex; /* Usar flexbox */
-      align-items: center; /* Alinear verticalmente */
-      justify-content: center; /* Centrar horizontalmente */
-      text-align: center; /* Alineación centrada */
-      padding: 2rem; /* Espaciado interno */
-    }
+/* =========================
+   Centrado de Texto
+   ========================= */
+.centrar-texto {
+    text-align: center; /* Centrar texto */
+}
 
-    header h1 {
-      font-size: 3rem; /* Tamaño de fuente */
-      background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado */
-      -webkit-background-clip: text; /* Recortar fondo en el texto */
-      -webkit-text-fill-color: transparent; /* Texto transparente */
-      font-weight: 800; /* Peso de la fuente */
-    }
+/* =========================
+   Estilos del Encabezado
+   ========================= */
+header {
+    background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95)), 
+                url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; /* Fondo con imagen */
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Usar flexbox */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center; /* Alineación centrada */
+    padding: 2rem; /* Espaciado interno */
+}
 
-    /* Estilo principsal del encabezado */
-    header {
-      background: 
-        linear-gradient(to bottom, rgba(13,17,23,0.92), rgba(13,17,23,0.96)), 
-        url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') 
-        center/cover no-repeat;
-      min-height: 100vh;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      justify-content: flex-start; /* 👈 ESTO ES CLAVE */
-
-      text-align: center;
-      padding: 6rem 1.5rem 3rem; /* 👈 MÁS ESPACIO ARRIBA, MENOS ABAJO */
-      color: #f0f0f0;
-      position: relative;
-    }
-
-    /* Logo con tamaño y sombra para destacar */
-    .logo-img {
-      max-width: 120px;
-      margin-bottom: 1.5rem;
-      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-    }
-
-    /* Título principal */
-    header h1 {
+/* =========================
+   Estilo del Título Principal
+   ========================= */
+header h1 {
       font-size: 3rem;
       background: linear-gradient(90deg, #6C23DA, #00c6ff);
       -webkit-background-clip: text;
@@ -70,383 +51,694 @@ body {
       font-weight: 900;
       letter-spacing: 1px;
       margin-bottom: 1rem;
-    }
+}
 
-    /* Subtítulo */
-    header p {
-      font-size: 1.25rem;
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: #d1d1d1;
-    }
-
-    h3 {
-      color: #007BFF;
-      text-align: center; /* Centrar títulos */
-    }
-
-    h2 {
-      font-size: 2.5rem; /* Tamaño de fuente */
-      color: #00c6ff; /* Color del texto */
-      text-align: center; /* Alineación centrada */
-      font-weight: 800; /* Peso de la fuente */
-    }
-
-    section h2 {
-      font-size: 2.5rem; /* Tamaño de fuente */
-      color: #00c6ff; /* Color del texto */
-      text-align: center; /* Alineación centrada */
-      font-weight: 800; /* Peso de la fuente */
-    }
-
-    /* Estilos para las secciones */
-    section {
-      padding: 3rem 2rem; /* Espaciado interno */
-      max-width: 900px; /* Ancho máximo */
-      margin: auto; /* Centrar horizontalmente */
-    }
-
-    .beneficios, .verificacion, .ul {
-      background: #161b22;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-    }
-
-    .beneficios ul {
-      list-style-type: none; /* Eliminar las viñetas */
-      padding: 0; /* Eliminar el padding por defecto */
-      margin: 0; /* Eliminar el margen por defecto */
-      text-align: center;
-    }
-
-    /* Botones de acordeón */
-    .accordion-button {
-      background-color: #0056b3; /* Azul profesional */
-      color: #fff;
-      border: none;
-      padding: 12px 16px;
-      width: 100%;
-      text-align: left;
-      cursor: pointer;
-      font-size: 1rem;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-      margin-bottom: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      border-radius: 10px;
-      transition: all 0.3s ease;
-    }
-
-    .accordion-button:hover {
-      transform: translateY(-2px);
-      background-color: #003f7f;
-    }
-
-    .accordion-content {
-      transition: all 0.5s ease;
-      overflow: hidden;
-      padding: 15px;
-      display: none;
-      border-top: 1px solid #ccc;
-      margin-top: 5px;
-    }
-
-    .divider {
-      margin: 15px 0;
-    }
-
-    .footer {
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-      border-top: 1px solid #222;
-    }
-
-    .footer .footer-columns {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      max-width: 1200px; /* Ancho máximo para el contenido */
-      margin: 0 auto; /* Centrar el contenedor */
-      padding: 20px 10px; /* Espaciado interno */
-    }
-
-    /* Contenedor de beneficios u otros bloques */
-    section, .beneficios, .contenido {
-      padding: 20px 15px;
-      margin: 0 auto;
-      width: 100%;
-      text-align: center;
-      border-radius: 14px;
-      background-color: #161b22;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .footer h4 {
-      margin-bottom: 12px;
-      font-weight: 600;
-      color: white;
-    }
-
-    .footer p, .footer ul {
-      line-height: 1.8;
-      margin: 0;
-      padding: 0;
-    }
-
-    .footer ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .token-button {
-      background-color: #0d1117; /* Color de fondo */
-      color: #0d1117; /* Color del texto */
-      padding: 1rem 2rem; /* Espaciado interno */
-      border-radius: 8px; /* Bordes redondeados */
-      font-weight: bold; /* Peso de la fuente */
-      text-decoration: none; /* Sin subrayado */
-      display: inline-flex; /* Alinea texto y flechas horizontalmente */
-      align-items: center; /* Centra verticalmente */
-      gap: 0.5rem; /* Espacio entre texto y flechas */
-      margin-top: 1rem; /* Margen superior */
-      margin-left: 80rem;
-      transition: background-color 0.3s ease; /* Transición suave para el fondo */
-      font-size: 0.1rem; /* Tamaño de fuente */
-      cursor: pointer; /* Cambiar cursor al pasar */
-    }
-
-    .back-button {
-      background-color: #0072ff; /* Color de fondo */
-      color: #fff; /* Color del texto */
-      padding: 1rem 2rem; /* Espaciado interno */
-      border-radius: 8px; /* Bordes redondeados */
-      font-weight: bold; /* Peso de la fuente */
-      text-decoration: none; /* Sin subrayado */
-      display: inline-flex; /* Alinea texto y flechas horizontalmente */
-      align-items: center; /* Centra verticalmente */
-      gap: 0.5rem; /* Espacio entre texto y flechas */
-      margin-top: 1rem; /* Margen superior */
-      margin-left: 1rem;
-      transition: background-color 0.3s ease; /* Transición suave para el fondo */
-      font-size: 1rem; /* Tamaño de fuente */
-      cursor: pointer; /* Cambiar cursor al pasar */
-    }
-
-    .back-button:hover {
-      background-color: #005dd8; /* Color de fondo al pasar el ratón */
-    }
-
-    .button {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      transition: background-color 0.3s;
-    }
-
-    .button:hover {
-      background-color: #218838;
-    }
-
-    .emoji {
-      width: 20px; /* Ajusta el tamaño del emoji */
-      height: 20px; /* Mantiene la proporción */
-      vertical-align: middle; /* Alinea el emoji con el texto */
-      margin-right: 5px; /* Espacio entre el emoji y el texto */
-    }
-
-    .texto-info {
-      font-weight: bold;
-      margin-top: 20px;
-      text-align: center; /* Centrar texto informativo */
-    }
-
-    .precio-ars {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #007BFF;
-    }
+/* =========================
+   Estilo del Encabezado (Duplicado)
+   ========================= */
+header {
+    background: 
+        linear-gradient(to bottom, rgba(13,17,23,0.92), rgba(13,17,23,0.96)), 
+        url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') 
+        center/cover no-repeat; /* Fondo con imagen */
+    min-height: 100vh; /* Altura mínima del encabezado */
     
-    .formulario {
-      display: grid;
-      gap: 10px;
-    }
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Dirección de flexión en columna */
+    align-items: center; /* Alinear elementos al centro */
+    
+    justify-content: flex-start; /* Alinear al inicio del contenedor */
+    
+    text-align: center; /* Alineación centrada */
+    padding: 6rem 1.5rem 3rem; /* Espaciado interno (más espacio arriba, menos abajo) */
+    color: #f0f0f0; /* Color del texto */
+    position: relative; /* Posición relativa para elementos hijos */
+}
 
-    .formulario label {
-      font-weight: bold;
-    }
+/* =========================
+   Estilos del Logo
+   ========================= */
+.logo-img {
+    max-width: 120px; /* Ancho máximo del logo */
+    margin-bottom: 1.5rem; /* Margen inferior */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Sombra para destacar */
+}
 
-    .formulario input[type="text"],
-    .formulario input[type="email"],
-    .formulario input[type="file"] {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      width: 100%;
-      box-sizing: border-box;
-    }
+/* =========================
+   Subtítulo del Encabezado
+   ========================= */
+header p {
+    font-size: 1.25rem; /* Tamaño de fuente */
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    line-height: 1.6; /* Altura de línea */
+    color: #d1d1d1; /* Color del texto */
+}
 
-    .formulario input[type="file"] {
-      padding: 5px;
-    }
+/* =========================
+   Estilos de Títulos
+   ========================= */
+h2, section h2 {
+    font-size: 2.5rem; /* Tamaño de fuente */
+    color: #00c6ff; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+    font-weight: 800; /* Peso de la fuente */
+}
 
-    .metodo-pago {
-      margin-bottom: 20px;
-    }
+h3 {
+    color: #007BFF; /* Color del texto */
+    text-align: center; /* Centrar títulos */
+}
 
-    .metodo-pago h4 {
-      color: #007BFF;
-    }
+/* =========================
+   Estilos para las Secciones
+   ========================= */
+section {
+    padding: 3rem 2rem; /* Espaciado interno */
+    max-width: 900px; /* Ancho máximo */
+    margin: auto; /* Centrar horizontalmente */
+}
 
-    .metodo-pago p {
-      margin: 0;
-    }
+/* =========================
+   Estilos para Beneficios y Contenido
+   ========================= */
+.beneficios, .verificacion, .ul {
+    background: #161b22; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 30px; /* Margen inferior */
+}
 
-    .metodo-pago ul {
-      padding-left: 0; /* Eliminar padding en la lista */
-      list-style-type: none; /* Eliminar viñetas */
-    }
+/* =========================
+   Estilos de Listas en Beneficios
+   ========================= */
+.beneficios ul {
+    list-style-type: none; /* Eliminar las viñetas */
+    padding: 0; /* Eliminar el padding por defecto */
+    margin: 0; /* Eliminar el margen por defecto */
+    text-align: center; /* Centrar el texto */
+}
 
-    .metodo-pago li {
-      margin-bottom: 10px; /* Espaciado entre elementos de la lista */
-    }
+/* =========================
+   Estilos de Botones de Acordeón
+   ========================= */
+.accordion-button {
+    background-color: #0056b3; /* Azul profesional */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 12px 16px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    text-align: left; /* Alinear texto a la izquierda */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    font-size: 1rem; /* Tamaño de fuente */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+    margin-bottom: 8px; /* Margen inferior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra */
+}
 
-    .metodo-pago a {
-      color: #007BFF;
-      text-decoration: none; /* Quitar subrayado */
-    }
+/* Efecto al pasar el ratón sobre el botón */
+.accordion-button:hover {
+    transform: translateY(-2px); /* Mover hacia arriba */
+    background-color: #003f7f; /* Color de fondo al pasar */
+}
 
-    .metodo-pago a:hover {
-      text-decoration: underline; /* Subrayar al pasar el ratón */
-    }
+/* =========================
+   Contenido de Acordeón
+   ========================= */
+.accordion-content {
+    transition: all 0.5s ease; /* Transición suave */
+    overflow: hidden; /* Ocultar contenido desbordante */
+    padding: 15px; /* Espaciado interno */
+    display: none; /* Ocultar por defecto */
+    border-top: 1px solid #ccc; /* Borde superior */
+    margin-top: 5px; /* Margen superior */
+    text-align: left; /* Alinear contenido a la izquierda */
+    max-width: 100%; /* Ancho máximo para evitar desbordamiento */
+}
 
-    section {
-      padding: 40px 20px;
-      margin-bottom: 40px;
-    }
+/* =========================
+   Estilos de Divisores
+   ========================= */
+.divider {
+    margin: 15px 0; /* Margen superior e inferior */
+}
 
-    h1, h2, h3 {
-      margin-bottom: 20px;
-    }
+/* =========================
+   Estilos del Pie de Página
+   ========================= */
+.footer {
+    background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    font-size: 14px; /* Tamaño de fuente */
+    border-top: 1px solid #222; /* Borde superior */
+}
 
-    .boton-de-verificacion {
-      display: inline-block; /* Permite que se ajuste al texto */
-      width: 20px; /* Ajusta el tamaño del ícono */
-      height: 20px; /* Mantiene la proporción */
-      background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
-      background-size: contain; /* Asegura que la imagen se ajuste */
-      background-repeat: no-repeat; /* Evita que se repita la imagen */
-      vertical-align: middle; /* Alinea verticalmente con el texto */
-      margin-right: 5px; /* Espacio entre el ícono y el texto */
-    }
+/* =========================
+   Estilos para Columnas en el Pie de Página
+   ========================= */
+.footer .footer-columns {
+    display: flex; /* Usar flexbox */
+    justify-content: space-around; /* Espacio entre columnas */
+    flex-wrap: wrap; /* Permitir que las columnas se ajusten */
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px 10px; /* Espaciado interno */
+}
 
-    .chincheta {
-      display: inline-block; /* Permite que se ajuste al texto */
-      width: 20px; /* Ajusta el tamaño del ícono */
-      height: 20px; /* Mantiene la proporción */
-      background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png');
-      background-size: contain; /* Asegura que la imagen se ajuste */
-      background-repeat: no-repeat; /* Evita que se repita la imagen */
-      vertical-align: middle; /* Alinea verticalmente con el texto */
-      margin-right: 5px; /* Espacio entre el ícono y el texto */
-    }
+/* =========================
+   Contenedor de Beneficios u Otros Bloques
+   ========================= */
+section, .beneficios, .contenido {
+    padding: 20px 15px; /* Espaciado interno */
+    margin: 0 auto; /* Centrar horizontalmente */
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Centrar texto */
+    border-radius: 14px; /* Bordes redondeados */
+    background-color: #161b22; /* Color de fondo */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/*a*/
+
+.nota-container {
+    text-align: center; /* Centrar el contenido */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.nota-general {
+    color: #d1d1d1; /* Color del texto */
+    margin-top: 10px; /* Margen superior */
+    font-size: 1.1rem; /* Tamaño de fuente */
+}
+
+.info-dolar {
+    color: #555; /* Color del texto informativo */
+    margin-top: 10px; /* Espaciado superior */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+.dolar-blue {
+    font-weight: bold; /* Negrita para destacar */
+    margin-top: 10px; /* Espaciado superior */
+    color: #555; /* Color azul para resaltar */
+}
+
+/* =========================
+   Estilos de la Sección de Beneficios
+   ========================= */
+.beneficios-container {
+    display: grid; /* Usar grid para organizar los beneficios */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre tarjetas */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+.beneficio {
+    background-color: #1e2125; /* Color de fondo de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: transform 0.2s; /* Transición suave para el hover */
+}
+
+.beneficio:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+.beneficio h4 {
+    color: #00c6ff; /* Color para los títulos de beneficios */
+    margin: 0 0 10px; /* Margen inferior */
+    font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+.beneficio p {
+    color: #d1d1d1; /* Color del texto */
+    margin: 0; /* Sin margen */
+    line-height: 1.5; /* Altura de línea */
+}
+
+/* =========================
+   Estilos para la Sección de Beneficios
+   ========================= */
+.beneficios {
+    background-color: #0d1117;; /* Color de fondo general */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.acordeon {
+    background-color: #0d1117; /* Color de fondo del acordeón */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.acordeon-header {
+    padding: 15px; /* Espaciado interno */
+    cursor: default; /* Cambiar cursor a predeterminado */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    background-color: #0056b3; /* Color de fondo del encabezado */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+}
+
+.acordeon-content {
+    display: block; /* Mostrar contenido por defecto */
+    padding: 15px; /* Espaciado interno */
+}
+
+.beneficios-list {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+}
+
+.beneficios-list li:last-child {
+    border-bottom: none; /* Sin línea en el último elemento */
+}
+
+/* =========================
+   Estilos de la Sección de Beneficios
+   ========================= */
+.beneficios-list {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 20px 0; /* Margen superior e inferior */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.beneficios-list li {
+    background-color: #1e2125; /* Color de fondo de los elementos de la lista */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior entre elementos */
+    display: flex; /* Usar flexbox para alinear icono y texto */
+    align-items: center; /* Centrar verticalmente */
+    transition: background-color 0.2s; /* Transición suave para el hover */
+}
+
+.beneficios-list li:hover {
+    background-color: #2b2e33; /* Color de fondo al pasar el ratón */
+}
+
+.beneficio-icon {
+    font-size: 1.5rem; /* Tamaño del ícono */
+    color: #00c6ff; /* Color del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
 
 
-    .subtitulo-fase{
-      text-align: center;
-    }
+/* =========================
+   Estilos para Títulos en el Pie de Página
+   ========================= */
+.footer h4 {
+    margin-bottom: 12px; /* Margen inferior */
+    font-weight: 600; /* Peso de la fuente */
+    color: white; /* Color del texto */
+}
+
+/* =========================
+   Estilos para Párrafos y Listas en el Pie de Página
+   ========================= */
+.footer p, .footer ul {
+    line-height: 1.8; /* Altura de línea */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+}
+
+.footer ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+/* =========================
+   Estilos de Botones
+   ========================= */
+/* =========================
+   Estilos de Botón Oculto
+   ========================= */
+/* =========================
+   Estilos de Botón Oculto en el Footer
+   ========================= */
+/* =========================
+   Estilos de Botón Oculto en el Footer
+   ========================= */
+.token-button {
+    background-color: #007BFF; /* Color del botón igual al del footer */
+    color: transparent; /* Hacer el texto transparente */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    position: absolute; /* Posición absoluta para colocarlo en el footer */
+    bottom: -20px; /* Ajustar para que solo una pequeña parte sea visible */
+    right: 20px; /* Alinear a la derecha */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+/* =========================
+   Estilo del Hover del Botón
+   ========================= */
+.token-button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+}
+
+.back-button {
+    background-color: #0072ff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 1rem 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold; /* Peso de la fuente */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-flex; /* Alinea texto y flechas horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    gap: 0.5rem; /* Espacio entre texto y flechas */
+    margin-top: 1rem; /* Margen superior */
+    margin-left: 1rem; /* Margen izquierdo */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar */
+}
+
+.back-button:hover {
+    background-color: #005dd8; /* Color de fondo al pasar el ratón */
+}
+
+/* =========================
+   Estilos de Botones Generales
+   ========================= */
+.button {
+    background-color: #28a745; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin-top: 10px; /* Margen superior */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+.button:hover {
+    background-color: #218838; /* Color de fondo al pasar el ratón */
+}
+
+/* =========================
+   Estilos de Emojis
+   ========================= */
+.emoji {
+    width: 20px; /* Ajusta el tamaño del emoji */
+    height: 20px; /* Mantiene la proporción */
+    vertical-align: middle; /* Alinea el emoji con el texto */
+    margin-right: 5px; /* Espacio entre el emoji y el texto */
+}
+
+/* =========================
+   Estilos de Texto Informativo
+   ========================= */
+.texto-info {
+    font-weight: bold; /* Peso de la fuente */
+    margin-top: 20px; /* Margen superior */
+    text-align: center; /* Centrar texto informativo */
+}
+
+/* =========================
+   Estilos de Precio
+   ========================= */
+.precio-ars {
+    font-size: 1.5em; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    color: #007BFF; /* Color del texto */
+}
+
+/* =========================
+   Estilos de Formularios
+   ========================= */
+.formulario {
+    display: grid; /* Usar grid para el formulario */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.formulario label {
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="file"] {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+}
+
+.formulario input[type="file"] {
+    padding: 5px; /* Espaciado interno específico para archivos */
+}
+
+/* =========================
+   Estilos de Métodos de Pago
+   ========================= */
+.metodo-pago {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.metodo-pago h4 {
+    color: #007BFF; /* Color del título */
+}
+
+.metodo-pago p {
+    margin: 0; /* Sin margen */
+}
+
+/* Estilos para listas de métodos de pago */
+.metodo-pago ul {
+    padding-left: 0; /* Eliminar padding en la lista */
+    list-style-type: none; /* Eliminar viñetas */
+}
+
+.metodo-pago li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+/* Estilos para enlaces en métodos de pago */
+.metodo-pago a {
+    color: #007BFF; /* Color del enlace */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+.metodo-pago a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* =========================
+   Estilos Adicionales para Secciones
+   ========================= */
+section {
+    padding: 40px 20px; /* Espaciado interno */
+    margin-bottom: 40px; /* Margen inferior */
+}
+
+/* Estilos para márgenes de títulos */
+h1, h2, h3 {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* =========================
+   Estilos de Iconos de Verificación
+   ========================= */
+.boton-de-verificacion {
+    display: inline-block; /* Permite que se ajuste al texto */
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px; /* Mantiene la proporción */
+    background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png'); /* Imagen de verificación */
+    background-size: contain; /* Asegura que la imagen se ajuste */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/* =========================
+   Estilos de Chinchetas
+   ========================= */
+.chincheta {
+    display: inline-block; /* Permite que se ajuste al texto */
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: 20px; /* Mantiene la proporción */
+    background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png'); /* Imagen de chincheta */
+    background-size: contain; /* Asegura que la imagen se ajuste */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    vertical-align: middle; /* Alinea verticalmente con el texto */
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/* =========================
+   Estilos de Subtítulos de Fase
+   ========================= */
+.subtitulo-fase {
+    text-align: center; /* Centrar subtítulos */
+}
 
 /* =========================
    Responsive - Dispositivos pequeños (≤ 768px)
    ========================= */
 @media (max-width: 768px) {
+    header {
+        padding: 4rem 1rem 2rem; /* Ajustar espaciado en el encabezado */
+        background-size: cover; /* Asegurar que el fondo cubra el área */
+        text-align: center; /* Centrar contenido en el encabezado */
+    }
 
-  header {
-    padding: 4rem 1rem 2rem;
-  }
+    /* Títulos principales */
+    header h1 {
+        font-size: 2rem; /* Tamaño de fuente para pantallas pequeñas */
+        margin: 10px 0; /* Margen superior e inferior */
+        line-height: 1.3; /* Altura de línea */
+        color: #f0f0f0; /* Color del texto para mejor contraste */
+    }
 
-  /* Títulos principales */
-  header h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 10px 0;
-    line-height: 1.2;
-  }
+    /* Subtítulos */
+    h2, h3 {
+        font-size: 1.5rem; /* Tamaño de fuente para subtítulos */
+        margin: 10px 0; /* Margen superior e inferior */
+        color: #00c6ff; /* Color del subtítulo */
+    }
 
-  /* Subtítulos */
-  h2, h3 {
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 10px 0;
-  }
+    /* Botones de acordeón */
+    .accordion-button {
+        background-color: #0056b3; /* Azul profesional */
+        color: #fff; /* Color del texto */
+        border: none; /* Sin borde */
+        padding: 14px 18px; /* Espaciado interno aumentado para mejor toque */
+        width: 100%; /* Ancho completo */
+        text-align: left; /* Alinear texto a la izquierda */
+        cursor: pointer; /* Cambiar cursor al pasar */
+        font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+        border-radius: 10px; /* Bordes redondeados */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para el fondo y el movimiento */
+        margin-bottom: 10px; /* Margen inferior */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra */
+        outline: none; /* Sin contorno al enfocar */
+    }
 
-  /* Botones de acordeón */
-  .accordion-button {
-    background-color: #0056b3; /* Azul profesional */
-    color: #fff;
-    border: none;
-    padding: 12px 16px;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    margin-bottom: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-  }
+    .accordion-button:hover {
+        transform: translateY(-2px); /* Mover hacia arriba */
+        background-color: #003f7f; /* Color de fondo al pasar */
+    }
 
-  .accordion-button:hover {
-    transform: translateY(-2px);
-    background-color: #003f7f;
-  }
+    /* Contenedor de beneficios u otros bloques */
+    section, .beneficios, .contenido {
+        padding: 20px 15px; /* Espaciado interno */
+        margin: 0 auto; /* Centrar horizontalmente */
+        width: 100%; /* Ancho completo */
+        text-align: center; /* Centrar texto */
+        border-radius: 14px; /* Bordes redondeados */
+        background-color: #161b22; /* Color de fondo */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+        transition: box-shadow 0.3s ease; /* Transición para sombra */
+    }
 
-  /* Contenedor de beneficios u otros bloques */
-  section, .beneficios, .contenido {
-    padding: 20px 15px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    border-radius: 14px;
-    background-color: #161b22;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  }
+    section:hover, .beneficios:hover, .contenido:hover {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+    }
 
-  /* Alineación de párrafos y textos */
-  p, li {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 12px;
-  }
+    /* Alineación de párrafos y textos */
+    p, li {
+        font-size: 1rem; /* Tamaño de fuente más legible */
+        line-height: 1.6; /* Altura de línea */
+        text-align: justify; /* Justificar texto */
+        margin-bottom: 12px; /* Margen inferior */
+        color: #d1d1d1; /* Color del texto para mejor legibilidad */
+    }
 
-  /* Ajuste de imágenes o íconos si los hubiera */
-  img, svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+    /* Ajuste de imágenes o íconos si los hubiera */
+    img, svg {
+        max-width: 100%; /* Ajustar imágenes al contenedor */
+        height: auto; /* Mantener proporción */
+        display: block; /* Mostrar como bloque */
+        margin: 0 auto; /* Centrar */
+        border-radius: 8px; /* Bordes redondeados para imágenes */
+    }
 
-  /* Navegación u otros elementos si fueran necesarios */
-  nav, .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-  }
+    /* Navegación u otros elementos si fueran necesarios */
+    nav, .menu {
+        display: flex; /* Usar flexbox */
+        flex-direction: column; /* Dirección de flexión en columna */
+        align-items: center; /* Alinear elementos al centro */
+        gap: 10px; /* Espacio entre elementos */
+        padding: 10px; /* Espaciado interno */
+    }
+
+    /* Estilos de botones en navegación */
+    .nav-button {
+        background-color: #0072ff; /* Color de fondo */
+        color: #fff; /* Color del texto */
+        padding: 12px 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        text-decoration: none; /* Sin subrayado */
+        transition: background-color 0.3s ease; /* Transición suave para el fondo */
+        width: 100%; /* Ancho completo */
+        text-align: center; /* Centrar texto */
+    }
+
+    .nav-button:hover {
+        background-color: #005dd8; /* Color de fondo al pasar el ratón */
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        background-color: #007BFF; /* Color de fondo */
+        color: #D9D9D9; /* Color del texto */
+        text-align: center; /* Centrar texto */
+        padding: 16px; /* Espaciado interno */
+        font-size: 14px; /* Tamaño de fuente */
+        position: relative; /* Posición relativa para elementos dentro */
+    }
+
+    /* Estilos para el texto informativo */
+    .texto-info {
+        font-weight: bold; /* Peso de la fuente */
+        margin-top: 20px; /* Margen superior */
+        text-align: center; /* Centrar texto informativo */
+        color: #fff; /* Color del texto */
+    }
+
+    /* Estilos para enlaces informativos */
+    .texto-info a {
+        color: #4be213; /* Color del enlace */
+        text-decoration: underline; /* Subrayar enlace */
+    }
+}
+
+/* =========================
+   Estilos para Pantallas Grandes (PC)
+   ========================= */
+@media (min-width: 769px) {
+    .accordion-content {
+        text-align: left; /* Alinear contenido a la izquierda */
+        padding: 15px; /* Espaciado interno */
+        display: block; /* Mostrar el contenido */
+        max-width: 100%; /* Ancho máximo para evitar desbordamiento */
+    }
+}
+/* =========================
+   Contenido de Acordeón
+   ========================= */
+.accordion-content {
+    display: none; /* Ocultar contenido por defecto */
+    padding: 15px; /* Espaciado interno */
+    text-align: left; /* Alinear contenido a la izquierda */
 }
