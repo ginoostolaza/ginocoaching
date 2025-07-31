@@ -11,7 +11,7 @@
 <body>
   <nav role="navigation" aria-label="Menú principal">
     <h1>GINO COACHING</h1>
-    <button class="hamburger" aria-label="Abrir menú" title="Abrir menú"><img src="https://em-content.zobj.net/source/apple/419/closed-mailbox-with-raised-flag_1f4eb.png" alt="Cerrar menú" style="width: 40px; height: 40px; margin-right: 5px;"></button>
+    <button class="hamburger" aria-label="Abrir menú" title="Abrir menú"><span class="hamburguer-abrir-menu"></span></button>
     <ul class="nav-links">
       <li><a href="#sobre-mi">Sobre Mí</a></li>
       <li><a href="#que-incluye">Contenido</a></li>
@@ -76,48 +76,58 @@
   <section id="fases" class="seccion-ajustada">
     <h2>EL PROCESO PASO A PASO</h2>
 
-  <!-- FASE 1 -->
-  <div class="highlight-box" style="border-left: 6px solid #ffffff;">
-    <h1 style="
-      font-size: 1.5rem;
-      font-weight: 700;
-      background: white;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 0.5rem;
-    ">
-      FASE 1 — Acceso a la Comunidad
-    </h1>
+<!-- FASE 1 -->
+<div class="highlight-box" style="border-left: 6px solid #ffffff;">
+  <h1 style="
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+  ">
+    FASE 1 — Acceso a la Comunidad
+  </h1>
 
-    <p style="font-size: 1.25rem; color: rgba(216, 49, 242, 0.959); margin: 0;">
-      <strong><img src="https://em-content.zobj.net/source/apple/419/money-bag_1f4b0.png" alt="Bolsa llena de dinero" class="emoji">USD 50,00</strong> <span style="color: #555;">· Pago único</span>
-    </p>
+  <p style="font-size: 1.5rem; color: rgba(216, 49, 242, 0.959); margin: 0;">
+    <del style="color:#888;">USD 250,00</del><span style="color: rgba(216, 49, 242, 0.959);"> USD 50,00</span>
+    <span style="color: #555;">· Pago único (temporalmente) · 80% OFF</span>
+  </p>
 
-    <hr style="
-      margin: 2rem auto;
-      width: auto;
-      height: 4px;
-      border: none;
-      border-radius: 4px;
-      background: #555;
-    ">
-    
-    <p>Si estás empezando de cero y querés resultados reales rápido, esta fase es tu puerta de entrada.</p>
-    <ul class="benefits">
-      <br>
-      <li><span class="boton-de-verificacion"></span>Aprende sistemas rentables de trading: 2 estrategias efectivas explicadas paso a paso</li>
-      <li><span class="boton-de-verificacion"></span>Aprende sobre desarrollo personal: hábitos, mindset, libros, podcast, planteamiento efectivo de metas</li>
-      <li><span class="boton-de-verificacion"></span>Acceso a la comunidad de WhatsApp para que cambies tu entorno</li>
-      <!--<li><span class="boton-de-verificacion"></span>Formaciones grabadas desde cero (cómo depositar, retirar y verificar tu cuenta)</li>-->
-      <li><span class="boton-de-verificacion"></span>Psicotrading inicial: foco, confianza y acción</li>
-      <li><span class="boton-de-verificacion"></span>Elimina tus MIEDOS y tus VICIOS <span class="prohibido"></span></li>
-      <li><span class="boton-de-verificacion"></span>Ejemplos reales y errores comunes a evitar</li>
-      <!--<li><span class="boton-de-verificacion"></span>1 mentoria semanal con GINO los domingos</li>-->
-    </ul>
-    <p> Ideal si querés empezar hoy mismo sin excusas.</p>
-    <a class="btn-primary" href="fase-1.html"><span class="fuego"></span> Empezar ahora</a>
-  </div>
-  <br>
+  <hr style="
+    margin: 1.5rem auto;
+    width: auto;
+    height: 4px;
+    border: none;
+    border-radius: 4px;
+    background: #555;
+    margin-bottom: 1.9rem
+  ">
+
+  <!-- Párrafo inicial FASE 1 -->
+  <p style="font-size: 1.1rem; color:#ffffff; background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 8px; font-weight: 500; margin-bottom: 0.3rem;">
+    Si estás empezando de cero y querés resultados reales rápido, esta fase es tu puerta de entrada.
+  </p>
+
+  <ul class="benefits" style="margin-top: 1.6rem;">
+    <li><span class="boton-de-verificacion"></span>Aprendé trading con 2 sistemas claros y efectivos</li>
+    <li><span class="boton-de-verificacion"></span>Desarrollo personal: hábitos, mentalidad y metas claras</li>
+    <li><span class="boton-de-verificacion"></span>Acceso a la comunidad para que cambies tu entorno</li>
+    <!--<li><span class="boton-de-verificacion"></span>Formaciones grabadas desde cero (cómo depositar, retirar y verificar tu cuenta)</li>-->
+    <li><span class="boton-de-verificacion"></span>Psicotrading inicial: foco, confianza y acción</li>
+    <li><span class="boton-de-verificacion"></span>Elimina tus MIEDOS y tus VICIOS <span class="prohibido"></span></li>
+    <li><span class="boton-de-verificacion"></span>Ejemplos reales y errores comunes a evitar</li>
+    <li><span class="boton-de-verificacion"></span>Recibí material premium y tácticas diseñadas para traders en crecimiento</li>
+    <!--<li><span class="boton-de-verificacion"></span>1 mentoria semanal con GINO los domingos</li>-->
+  </ul>
+
+  <!-- Párrafo final igual que estilo FASE 2 -->
+  <p style="font-size: 1.1rem; color:#ddd; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; font-style: italic; margin-top: 1.5rem;">
+    <span class="chincheta"></span> Ideal si querés empezar hoy mismo sin excusas.
+  </p>
+
+  <a class="btn-primary" href="pasareladepago1.html"><span class="fuego"></span> Empezar ahora</a>
+</div>
 
     <hr style="
       margin: 2rem auto;
@@ -142,8 +152,7 @@
 
     </h1>
 
-    <p style="font-size: 1.25rem; color: rgba(216, 49, 242, 0.959); margin: 0;">
-      <strong><img src="https://em-content.zobj.net/source/apple/419/money-bag_1f4b0.png" alt="Bolsa llena de dinero" class="emoji">[PRÓXIMAMENTE]</strong> <span style="color: #555;">· Pago único</span>
+    <p style="font-size: 1.5rem; color: rgba(216, 49, 242, 0.959); margin: 0;">[PRÓXIMAMENTE] <span style="color: #555;">· Pago trimestral/anual</span>
     </p>
 
     <hr style="
@@ -154,23 +163,30 @@
       border-radius: 4px;
       background: #555;
     ">
-    <p>Si ya tenés bases sólidas y querés pasar al siguiente nivel con acompañamiento cercano, esta fase es para vos. Incluye todo el contenido y beneficios de la Fase 1 + 2 estrategias nuevas.</p>
+    <!-- Párrafo inicial -->
+    <!-- Párrafo inicial con menos espacio abajo -->
+    <p style="font-size: 1.1rem; color:#ffffff; background: rgba(255,255,255,0.08); padding: 1rem; border-radius: 8px; font-weight: 500; margin-bottom: 0.2rem;">
+      Si ya tenés bases sólidas y querés pasar al siguiente nivel con acompañamiento cercano, esta fase es para vos. Incluye todo el contenido y beneficios de la Fase 1 + 2 estrategias nuevas.
+    </p>
     <ul class="benefits">
       <br>
-      <li><span class="boton-de-verificacion"></span>Incluye las 2 estrategias de Fase 1 + 2 estrategias nuevas (total: 4 estrategias)</li>
-      <li><span class="boton-de-verificacion"></span>Nivel técnico intermedio: lectura real del mercado</li>
-      <li><span class="boton-de-verificacion"></span>Planificación profesional y gestión del riesgo avanzada</li>
-      <li><span class="boton-de-verificacion"></span>Zooms de análisis semanales en grupo reducido</li>
-      <li><span class="boton-de-verificacion"></span>Crea ese HOMBRE o esa MUJER que siempre admiraste y respetaste</li>
-      <li><span class="boton-de-verificacion"></span>Comunidad premium con traders comprometidos</li>
-      <li><span class="boton-de-verificacion"></span>Eleva tu SER a un siguiente nivel para atraer lo que quieras a tu vida</li>
-      <li><span class="boton-de-verificacion"></span>Contacto directo con Gino vía WhatsApp para dudas prioritarias</li>
-      <li><span class="boton-de-verificacion"></span>Construye una CONFIANZA INQUEBRANTABLE</li>
-      <li><span class="boton-de-verificacion"></span>Acceso a todas las mentorías pasadas de la SALA</li>
-      <li><span class="boton-de-verificacion"></span>Elimina tus MIEDOS / VICIOS / CREENCIAS LIMITANTES</li>
-      <li><span class="boton-de-verificacion"></span>Acceso a contenidos exclusivos y estrategias intermedias</li>
+      <li><span class="boton-de-verificacion"></span>Sumá 2 estrategias nuevas y llevá tu sistema a 4 métodos efectivos</li>
+      <li><span class="boton-de-verificacion"></span>Domina análisis técnico avanzado para interpretar el mercado con precisión</li>
+      <li><span class="boton-de-verificacion"></span>Diseñá gestiones sólidas y gestioná riesgos como un trader experto</li>
+      <li><span class="boton-de-verificacion"></span>Participá en sesiones exclusivas semanales para análisis en vivo y dudas</li>
+      <li><span class="boton-de-verificacion"></span>Transforma tu mentalidad y actitud para convertirte en la mejor versión de vos</li>
+      <li><span class="boton-de-verificacion"></span>Formá parte de un grupo selecto de traders enfocados y con objetivos claros</li>
+      <li><span class="boton-de-verificacion"></span>Potenciá tu crecimiento personal para manifestar resultados tangibles</li>
+      <li><span class="boton-de-verificacion"></span>Consultá conmigo directamente y obtené respuestas rápidas y personalizadas</li>
+      <li><span class="boton-de-verificacion"></span>Fortalecé tu seguridad y toma decisiones con plena convicción</li>
+      <li><span class="boton-de-verificacion"></span>Consultá contenido exclusivo y grabaciones para repasar a tu ritmo</li>
+      <li><span class="boton-de-verificacion"></span>Rompé bloqueos mentales que frenan tu progreso y avanzá sin límites</li>
+      <li><span class="boton-de-verificacion"></span>Recibí material premium y tácticas diseñadas para traders en crecimiento</li>
     </ul>
-    <p><span class="chincheta"></span> Perfecta si querés consistencia y un entorno cercano que te potencie.</p>
+    <!-- Párrafo final -->
+    <p style="font-size: 1.1rem; color:#ddd; background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; font-style: italic; margin-top: 1.5rem;">
+      <span class="chincheta"></span> Perfecta si querés consistencia y un entorno cercano que te potencie.
+    </p>
     <a class="btn-primary bloqueado"><span class="cohete"></span> Reservar mi lugar [No disponible] <span class="prohibido"></a>
   </div>
 
@@ -219,7 +235,7 @@
 
     <div class="faq-item">
       <h3>¿EXISTEN DESCUENTOS POR FORMAS DE PAGO?</h3>
-      <p>No, se debe abonar el pago correspondiente.</p>
+      <p>Si, abonando en efectivo (zona de Chacabuco) <strong>tenes un 15% OFF</strong> en cualquiera de las fases. </p>
     </div>
 
   </section>
@@ -241,7 +257,7 @@
 
 
   <footer class="footer">
-    <p>© <span id="anio-actual"></span> Gino Ostolaza. Todos los derechos reservados.</p>
+    <p>© <span id="anio-actual"></span> Gino Ostolaza | Todos los derechos reservados.</p>
   </footer>
 
 <script>
@@ -265,10 +281,10 @@
     
     // Cambiar emoji según el estado del menú
     if (navLinks.classList.contains('active')) {
-      hamburger.innerHTML = `<img src="https://em-content.zobj.net/source/apple/419/open-mailbox-with-raised-flag_1f4ec.png" alt="Cerrar menú" width="35" height="35">`;
+      hamburger.innerHTML = `<span class="hamburguer-cerrar-menu"></span>`;
       hamburger.setAttribute('aria-label', 'Cerrar menú');
     } else {
-      hamburger.innerHTML = `<img src="https://em-content.zobj.net/source/apple/419/closed-mailbox-with-raised-flag_1f4eb.png" alt="Abrir menú" width="35" height="35">`;
+      hamburger.innerHTML = `<span class="hamburguer-abrir-menu"></span>`;
       hamburger.setAttribute('aria-label', 'Abrir menú');
     }
   });
