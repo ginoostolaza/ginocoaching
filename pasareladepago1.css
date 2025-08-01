@@ -513,7 +513,19 @@ section, .beneficios, .contenido {
    Estilos de Métodos de Pago
    ========================= */
 .metodo-pago {
-    margin-bottom: 20px; /* Margen inferior */
+  max-width: 600px;        /* $aaa: Más angosto */
+  margin: 2rem auto;       /* $aaa: Centrado con espacio arriba y abajo */
+  padding: 1rem;           /* $aaa: Espaciado interno */
+  border-radius: 12px;     /* $aaa: Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* $aaa: Sombra sutil */
+  font-size: 1rem;         /* $aaa: Tamaño legible */
+  line-height: 1.6;        /* $aaa: Mejor lectura */
+}
+
+.metodo-pago h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center; /* $aaa: Centrado */
 }
 
 .metodo-pago h4 {
@@ -526,12 +538,12 @@ section, .beneficios, .contenido {
 
 /* Estilos para listas de métodos de pago */
 .metodo-pago ul {
-    padding-left: 0; /* Eliminar padding en la lista */
-    list-style-type: none; /* Eliminar viñetas */
+  padding-left: 1.5rem;
+  list-style-type: disc;
 }
 
 .metodo-pago li {
-    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+  margin-bottom: 0.5rem;
 }
 
 /* Estilos para enlaces en métodos de pago */
@@ -560,29 +572,71 @@ h1, h2, h3 {
 /* =========================
    Estilos de Iconos de Verificación
    ========================= */
-.boton-de-verificacion {
-    display: inline-block; /* Permite que se ajuste al texto */
-    width: 20px; /* Ajusta el tamaño del ícono */
-    height: 20px; /* Mantiene la proporción */
-    background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png'); /* Imagen de verificación */
-    background-size: contain; /* Asegura que la imagen se ajuste */
-    background-repeat: no-repeat; /* Evita que se repita la imagen */
-    vertical-align: middle; /* Alinea verticalmente con el texto */
-    margin-right: 5px; /* Espacio entre el ícono y el texto */
+.chincheta {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
 
-/* =========================
-   Estilos de Chinchetas
-   ========================= */
-.chincheta {
-    display: inline-block; /* Permite que se ajuste al texto */
-    width: 20px; /* Ajusta el tamaño del ícono */
-    height: 20px; /* Mantiene la proporción */
-    background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png'); /* Imagen de chincheta */
-    background-size: contain; /* Asegura que la imagen se ajuste */
-    background-repeat: no-repeat; /* Evita que se repita la imagen */
-    vertical-align: middle; /* Alinea verticalmente con el texto */
-    margin-right: 5px; /* Espacio entre el ícono y el texto */
+.fuego {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/fire_1f525.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: 2px; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.emoji {
+  width: 25px; /* Ajusta el tamaño del emoji */
+  height: 25px; /* Mantiene la proporción */
+  vertical-align: middle; /* Alinea el emoji con el texto */
+  margin-right: 5px; /* Espacio entre el emoji y el texto */
+}
+
+.boton-de-verificacion {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.cohete {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/rocket_1f680.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.prohibido {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-image: url('https://em-content.zobj.net/source/apple/419/prohibited_1f6ab.png');
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.bloqueado {
+  opacity: 0.4;
+  border-left: 6px solid #ccc;
 }
 
 /* =========================
@@ -592,141 +646,266 @@ h1, h2, h3 {
     text-align: center; /* Centrar subtítulos */
 }
 
-/* =========================
-   Responsive - Dispositivos pequeños (≤ 768px)
-   ========================= */
+/* ==================== BASE ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* $aaa */
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden; /* $aaa para evitar scroll lateral */
+}
+
+/* ==================== HEADER Y MENÚ ==================== */
+
+nav#mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #201139;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* $aaa */
+nav#mobile-menu h1 a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* $aaa */
+button.hamburger {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menú desplegable */
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #201139;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+}
+
+/* $aaa */
+.menu a {
+  padding: 0.75rem 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Mostrar menú cuando está abierto */
+.menu.open {
+  display: flex;
+}
+
+.contenedor-principal {
+  max-width: 600px; /* $aaa */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.acordeones {
+  max-width: 600px; /* $aaa: Limitamos el ancho para hacerlo más angosto */
+  margin: 0 auto;   /* $aaa: Centramos horizontalmente */
+  padding: 1rem;
+}
+
+.acordeon-content {
+  max-width: 600px; /* $aaa: Igual que el contenedor padre para mantenerlo angosto */
+  margin: 0 auto;   /* $aaa */
+}
+
+.beneficios-list {
+  padding-left: 1rem;
+  list-style: disc;
+  line-height: 1.7;
+  font-size: 1rem;
+  max-width: 600px; /* $aaa */
+  margin: 0 auto;   /* $aaa */
+}
+
+
+/* ==================== SECCIONES ==================== */
+
+/* $aaa */
+section {
+  padding: 2rem 1rem;
+  max-width: 100%;
+}
+
+/* $aaa */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ==================== TEXTO Y CONTENEDORES ==================== */
+
+/* $aaa */
+p, li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #D9D9D9;
+}
+
+/* $aaa */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* ==================== FAQS ==================== */
+
+/* $aaa */
+.faqs {
+  padding: 1rem;
+}
+
+/* $aaa */
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
 @media (max-width: 768px) {
-    header {
-        padding: 4rem 1rem 2rem; /* Ajustar espaciado en el encabezado */
-        background-size: cover; /* Asegurar que el fondo cubra el área */
-        text-align: center; /* Centrar contenido en el encabezado */
-    }
+  /* $aaa Ajuste del título */
+  nav#mobile-menu h1 a {
+    font-size: 1rem;
+  }
 
-    /* Títulos principales */
-    header h1 {
-        font-size: 2rem; /* Tamaño de fuente para pantallas pequeñas */
-        margin: 10px 0; /* Margen superior e inferior */
-        line-height: 1.3; /* Altura de línea */
-        color: #f0f0f0; /* Color del texto para mejor contraste */
-    }
+  /* $aaa Botón hamburguesa más grande */
+  button.hamburger {
+    font-size: 2.5rem;
+  }
 
-    /* Subtítulos */
-    h2, h3 {
-        font-size: 1.5rem; /* Tamaño de fuente para subtítulos */
-        margin: 10px 0; /* Margen superior e inferior */
-        color: #00c6ff; /* Color del subtítulo */
-    }
+  /* $aaa Texto más adaptable */
+  p, li {
+    font-size: 0.95rem;
+  }
 
-    /* Botones de acordeón */
-    .accordion-button {
-        background-color: #0056b3; /* Azul profesional */
-        color: #fff; /* Color del texto */
-        border: none; /* Sin borde */
-        padding: 14px 18px; /* Espaciado interno aumentado para mejor toque */
-        width: 100%; /* Ancho completo */
-        text-align: left; /* Alinear texto a la izquierda */
-        cursor: pointer; /* Cambiar cursor al pasar */
-        font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
-        border-radius: 10px; /* Bordes redondeados */
-        transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para el fondo y el movimiento */
-        margin-bottom: 10px; /* Margen inferior */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra */
-        outline: none; /* Sin contorno al enfocar */
-    }
+  /* $aaa Secciones con menos padding */
+  section {
+    padding: 1.5rem 1rem;
+  }
 
-    .accordion-button:hover {
-        transform: translateY(-2px); /* Mover hacia arriba */
-        background-color: #003f7f; /* Color de fondo al pasar */
-    }
+  /* $aaa FAQ */
+  .faq-item h3 {
+    font-size: 1rem;
+  }
+}
 
-    /* Contenedor de beneficios u otros bloques */
-    section, .beneficios, .contenido {
-        padding: 20px 15px; /* Espaciado interno */
-        margin: 0 auto; /* Centrar horizontalmente */
-        width: 100%; /* Ancho completo */
-        text-align: center; /* Centrar texto */
-        border-radius: 14px; /* Bordes redondeados */
-        background-color: #161b22; /* Color de fondo */
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra */
-        transition: box-shadow 0.3s ease; /* Transición para sombra */
-    }
+/* ==================== CLASES PERSONALIZADAS QUE MENCIONASTE ==================== */
 
-    section:hover, .beneficios:hover, .contenido:hover {
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
-    }
+/* $aaa Clase menu */
+.menu.abrir {
+  display: flex;
+  flex-direction: column;
+}
 
-    /* Alineación de párrafos y textos */
-    p, li {
-        font-size: 1rem; /* Tamaño de fuente más legible */
-        line-height: 1.6; /* Altura de línea */
-        text-align: justify; /* Justificar texto */
-        margin-bottom: 12px; /* Margen inferior */
-        color: #d1d1d1; /* Color del texto para mejor legibilidad */
-    }
+/* ==================== FINAL ==================== */
 
-    /* Ajuste de imágenes o íconos si los hubiera */
-    img, svg {
-        max-width: 100%; /* Ajustar imágenes al contenedor */
-        height: auto; /* Mantener proporción */
-        display: block; /* Mostrar como bloque */
-        margin: 0 auto; /* Centrar */
-        border-radius: 8px; /* Bordes redondeados para imágenes */
-    }
+.titulo-fase {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
 
-    /* Navegación u otros elementos si fueran necesarios */
-    nav, .menu {
-        display: flex; /* Usar flexbox */
-        flex-direction: column; /* Dirección de flexión en columna */
-        align-items: center; /* Alinear elementos al centro */
-        gap: 10px; /* Espacio entre elementos */
-        padding: 10px; /* Espaciado interno */
-    }
+.subtitulo-fase {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    /* Estilos de botones en navegación */
-    .nav-button {
-        background-color: #0072ff; /* Color de fondo */
-        color: #fff; /* Color del texto */
-        padding: 12px 20px; /* Espaciado interno */
-        border-radius: 5px; /* Bordes redondeados */
-        text-decoration: none; /* Sin subrayado */
-        transition: background-color 0.3s ease; /* Transición suave para el fondo */
-        width: 100%; /* Ancho completo */
-        text-align: center; /* Centrar texto */
-    }
+.acordeon-header {
+  background-color: linear-gradient(90deg, #6C23DA, #00c6ff);;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .nav-button:hover {
-        background-color: #005dd8; /* Color de fondo al pasar el ratón */
-    }
+.precio-fase {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-left: 10px;
+}
 
-    /* Estilos para el pie de página */
-    footer {
-        background-color: #007BFF; /* Color de fondo */
-        color: #D9D9D9; /* Color del texto */
-        text-align: center; /* Centrar texto */
-        padding: 16px; /* Espaciado interno */
-        font-size: 14px; /* Tamaño de fuente */
-        position: relative; /* Posición relativa para elementos dentro */
-    }
+.acordeon-content {
+  background-color: linear-gradient(90deg, #6C23DA, #00c6ff);
+  border-radius: 12px;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  color: #D9D9D9;
+  font-size: 1rem;
+}
 
-    /* Estilos para el texto informativo */
-    .texto-info {
-        font-weight: bold; /* Peso de la fuente */
-        margin-top: 20px; /* Margen superior */
-        text-align: center; /* Centrar texto informativo */
-        color: #fff; /* Color del texto */
-    }
+.beneficios-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
 
-    /* Estilos para enlaces informativos */
-    .texto-info a {
-        color: #4be213; /* Color del enlace */
-        text-decoration: underline; /* Subrayar enlace */
-    }
+.beneficios-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.beneficio-titulo {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.frase-final {
+  text-align: center;
+  font-style: italic;
+  color: #bbb;
+  margin-top: 1rem;
 }
 
 /* =========================
    Estilos para Pantallas Grandes (PC)
    ========================= */
 @media (min-width: 769px) {
+    .titulo-fase {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo-fase {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .acordeon-content {
+        font-size: 0.95rem;
+    }
     .accordion-content {
         text-align: left; /* Alinear contenido a la izquierda */
         padding: 15px; /* Espaciado interno */
