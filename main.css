@@ -16,45 +16,40 @@ body {
   line-height: 1.6; /* Altura de línea */
 }
 
-/* Estilos para la barra de navegación */
+/* --------------------------------------------- */
+/* ----------- ESTILOS DE NAVEGACIÓN ----------- */
+/* --------------------------------------------- */
+
 nav {
   display: flex; /* Usar flexbox */
   justify-content: space-between; /* Espacio entre elementos */
   align-items: center; /* Alinear verticalmente */
   padding: 1rem 2rem; /* Espaciado interno */
   background-color: #0d1117; /* Color de fondo */
-  border-bottom: 1px solid rgba(255,255,255,0.1); /* Borde inferior */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borde inferior */
   position: sticky; /* Fijar en la parte superior */
   top: 0; /* Posición superior */
   z-index: 100; /* Apilar sobre otros elementos */
-  flex-wrap: nowrap;  /* Evita que los elementos se muevan a otra línea */
-}
-
-h1 a{
-  text-decoration: none;
+  flex-wrap: nowrap; /* Evita que los elementos se muevan a otra línea */
 }
 
 nav h1 {
-  font-size: 2rem; /* Tamaño de fuente */
+  font-size: 1.8rem; /* Tamaño de fuente */
   background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado */
   -webkit-background-clip: text; /* Recortar fondo en el texto */
   -webkit-text-fill-color: transparent; /* Texto transparente */
-
-  white-space: nowrap;    /* Evita que el texto se parta en varias líneas */
-  flex-shrink: 0;         /* Evita que el h1 reduzca su tamaño */
-  margin: 0;      
+  white-space: nowrap; /* Evita que el texto se parta en varias líneas */
+  flex-shrink: 0; /* Evita que el h1 reduzca su tamaño */
+  margin: 0; /* Sin margen */
 }
 
 nav ul {
   list-style: none; /* Sin estilo de lista */
   display: flex; /* Usar flexbox */
   gap: 1.5rem; /* Espacio entre elementos */
-  white-space: nowrap;    /* Evita que el texto se parta en varias líneas */
-  flex-shrink: 0;         /* Evita que el h1 reduzca su tamaño */
-  margin-top: 10px;
-  max-width: 60vw; /* Limita ancho para que no empuje al título */
-  overflow: hidden; /* Si hay muchos links evita que crezca y haga wrap */
   white-space: nowrap; /* Mantiene los links en una línea */
+  max-width: 60vw; /* Limita ancho para que no empuje al título */
+  overflow: hidden; /* Evita que crezca y haga wrap */
 }
 
 nav ul li a {
@@ -62,24 +57,13 @@ nav ul li a {
   color: #d9d9d9; /* Color del texto */
   font-weight: 600; /* Peso de la fuente */
   transition: color 0.3s ease; /* Transición suave para el color */
-  white-space: nowrap; /* Que cada link no se parta */
 }
 
 nav ul li a:hover {
   color: #00c6ff; /* Color del texto al pasar el ratón */
 }
 
-ul {
-  list-style: none; /* Sin estilo de lista */
-  padding-left: 0; /* Sin padding izquierdo */
-}
-
-ul li {
-  font-size: 1.1rem; /* Tamaño de fuente */
-  margin-bottom: 0.7rem; /* Margen inferior */
-  line-height: 1.5; /* Altura de línea */
-}
-
+/* Estilos para el botón de menú hamburguesa */
 .hamburger {
   display: none; /* Ocultar por defecto */
   font-size: 2rem; /* Tamaño de fuente */
@@ -89,16 +73,13 @@ ul li {
   color: white; /* Color del texto */
 }
 
-/* Estilos para el encabezado de la pasarela */
-.pasarela-header {
-  background: none; /* Sin fondo */
-  height: auto; /* Altura automática */
-  padding: 2rem 1rem; /* Espaciado interno */
-}
+/* --------------------------------------------- */
+/* ----------- ESTILOS DEL HEADER -------------- */
+/* --------------------------------------------- */
 
-/* Estilo del encabezado principal */
 header {
-  background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95)), url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; /* Fondo con imagen */
+  background: linear-gradient(to bottom, rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.95)), 
+              url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; /* Fondo con imagen */
   height: 100vh; /* Altura completa de la ventana */
   display: flex; /* Usar flexbox */
   align-items: center; /* Alinear verticalmente */
@@ -107,109 +88,12 @@ header {
   padding: 2rem; /* Espaciado interno */
 }
 
-.pasarela-titulo {
-  font-size: 3rem; /* Tamaño de fuente */
-  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado */
-  -webkit-background-clip: text; /* Recortar fondo en el texto */
-  -webkit-text-fill-color: transparent; /* Texto transparente */
-  font-weight: 800; /* Peso de la fuente */
-}
-
-/*MENU HAMBURGUESA EMOJI*/
-
-.hamburguer-abrir-menu {
-  display: inline-block; /* Permite que se ajuste al texto */
-  width: 35px; /* Ajusta el tamaño del ícono */
-  height: 35px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/closed-mailbox-with-raised-flag_1f4eb.png');
-  background-size: contain; /* Asegura que la imagen se ajuste */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
-  vertical-align: middle; /* Alinea verticalmente con el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.hamburguer-cerrar-menu {
-  display: inline-block; /* Permite que se ajuste al texto */
-  width: 35px; /* Ajusta el tamaño del ícono */
-  height: 35px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/open-mailbox-with-raised-flag_1f4ec.png');
-  background-size: contain; /* Asegura que la imagen se ajuste */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
-  vertical-align: middle; /* Alinea verticalmente con el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-/*EMOJIS*/
-
-.chincheta {
-  display: inline-block; /* Permite que se ajuste al texto */
-  width: 25px; /* Ajusta el tamaño del ícono */
-  height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png');
-  background-size: contain; /* Asegura que la imagen se ajuste */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
-  vertical-align: middle; /* Alinea verticalmente con el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.fuego {
-  display: inline-block; /* Permite que se ajuste al texto */
-  width: 25px; /* Ajusta el tamaño del ícono */
-  height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/fire_1f525.png');
-  background-size: contain; /* Asegura que la imagen se ajuste */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
-  vertical-align: 2px; /* Alinea verticalmente con el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.emoji {
-  width: 25px; /* Ajusta el tamaño del emoji */
-  height: 25px; /* Mantiene la proporción */
-  vertical-align: middle; /* Alinea el emoji con el texto */
-  margin-right: 5px; /* Espacio entre el emoji y el texto */
-}
-
-.boton-de-verificacion {
-  display: inline-block; /* Permite que se ajuste al texto */
-  width: 25px; /* Ajusta el tamaño del ícono */
-  height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
-  background-size: contain; /* Asegura que la imagen se ajuste */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
-  vertical-align: middle; /* Alinea verticalmente con el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.cohete {
-  display: inline-block; /* Permite que se ajuste al texto */
-  width: 25px; /* Ajusta el tamaño del ícono */
-  height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/rocket_1f680.png');
-  background-size: contain; /* Asegura que la imagen se ajuste */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
-  vertical-align: middle; /* Alinea verticalmente con el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.prohibido {
-  display: inline-block; /* Permite que se ajuste al texto */
-  width: 25px; /* Ajusta el tamaño del ícono */
-  height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/prohibited_1f6ab.png');
-  background-size: contain; /* Asegura que la imagen se ajuste */
-  background-repeat: no-repeat; /* Evita que se repita la imagen */
-  vertical-align: middle; /* Alinea verticalmente con el texto */
-  margin-right: 5px; /* Espacio entre el ícono y el texto */
-}
-
-.bloqueado {
-  opacity: 0.4;
-  border-left: 6px solid #ccc;
+h1 a{
+  text-decoration: none;
 }
 
 header h1 {
-  font-size: 3rem; /* Tamaño de fuente */
+  font-size: 2.8rem; /* Tamaño de fuente para H1 */
   background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado */
   -webkit-background-clip: text; /* Recortar fondo en el texto */
   -webkit-text-fill-color: transparent; /* Texto transparente */
@@ -217,79 +101,171 @@ header h1 {
 }
 
 header p {
-  font-size: 1.3rem; /* Tamaño de fuente */
+  font-size: 1.3rem; /* Tamaño de fuente para precios / destacados */
   margin: 1rem auto; /* Margen */
   max-width: 600px; /* Ancho máximo */
 }
 
-/* Estilos para los enlaces de redes sociales */
-.redes-link {
-  display: flex; /* Usar flexbox */
-  align-items: center; /* Alinear verticalmente */
-  gap: 0.8rem; /* Espacio entre elementos */
-  text-decoration: none; /* Sin subrayado */
-  color: #00c6ff; /* Color del texto */
-  font-weight: 600; /* Peso de la fuente */
-  transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
-  padding: 0.3rem 0.6rem; /* Espaciado interno */
-  border-radius: 6px; /* Bordes redondeados */
+/* --------------------------------------------- */
+/* ----------- ESTILOS DE EMOJI ---------------- */
+/* --------------------------------------------- */
+
+.hamburguer-abrir-menu,
+.hamburguer-cerrar-menu,
+.chincheta,
+.fuego,
+.boton-de-verificacion,
+.cohete,
+.prohibido {
+  display: inline-block; /* Permite que se ajuste al texto */
+  width: 25px; /* Ajusta el tamaño del ícono */
+  height: 25px; /* Mantiene la proporción */
+  background-size: contain; /* Asegura que la imagen se ajuste */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  vertical-align: middle; /* Alinea verticalmente con el texto */
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
 
-.redes-link:hover,
-.redes-link:focus {
-  color: #0091d5; /* Color más oscuro al pasar */
-  text-decoration: underline; /* Subrayar al pasar */
-  transform: scale(1.05); /* Aumentar tamaño al pasar */
-  outline: none; /* Sin contorno */
+.hamburguer-abrir-menu {
+  background-image: url('https://em-content.zobj.net/source/apple/419/closed-mailbox-with-raised-flag_1f4eb.png');
 }
 
-.redes-link img {
-  transition: filter 0.3s ease; /* Transición suave para el filtro */
+.hamburguer-cerrar-menu {
+  background-image: url('https://em-content.zobj.net/source/apple/419/open-mailbox-with-raised-flag_1f4ec.png');
 }
 
-.redes-link:hover img,
-.redes-link:focus img {
-  filter: brightness(1.2); /* Aumentar brillo al pasar */
+.chincheta {
+  background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png');
 }
 
-/* Estilo del botón primario */
-.btn-primary {
-  background-color: #0072ff; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  padding: 1rem 2rem; /* Espaciado interno */
-  border-radius: 8px; /* Bordes redondeados */
-  font-weight: bold; /* Peso de la fuente */
-  text-decoration: none; /* Sin subrayado */
-  display: inline-flex; /* Alinea texto y flechas horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  gap: 0.5rem; /* Espacio entre texto y flechas */
-  margin-top: 1rem; /* Margen superior */
-  transition: background-color 0.3s ease; /* Transición suave para el fondo */
-  font-size: 1.1rem; /* Tamaño de fuente */
-  cursor: pointer; /* Cambiar cursor al pasar */
+.fuego {
+  background-image: url('https://em-content.zobj.net/source/apple/419/fire_1f525.png');
 }
 
-.btn-primary:hover {
-  background-color: #005dd8; /* Color de fondo al pasar el ratón */
+.boton-de-verificacion {
+  background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
 }
 
-/* Animación de rebote */
-@keyframes bounceDown {
-  0%, 100% {
-    transform: translateY(0); /* Sin desplazamiento */
-  }
-  50% {
-    transform: translateY(4px); /* Desplazamiento hacia abajo */
-  }
+.cohete {
+  background-image: url('https://em-content.zobj.net/source/apple/419/rocket_1f680.png');
 }
 
-/* Estilo del botón primario al pasar */
-.btn-primary:hover {
-  background-color: #00c6ff; /* Color de fondo al pasar el ratón */
-  color: #fff; /* Color del texto */
+.prohibido {
+  background-image: url('https://em-content.zobj.net/source/apple/419/prohibited_1f6ab.png');
 }
 
-/* Estilos para las secciones */
+/* --------------------------------------------- */
+/* ------------ ESTILOS DE BOTONES ------------- */
+/* --------------------------------------------- */
+
+.boton-principal {
+  margin-top: 1.5rem; /* Separación del texto */
+  display: inline-block;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.25);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.boton-principal:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 114, 255, 0.35);
+  background: linear-gradient(90deg, #0072ff, #00c6ff); /* Invertido */
+}
+
+.boton-red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 1.3rem;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 198, 255, 0.2);
+  border: 1.5px solid #00c6ff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+}
+
+.boton-red::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(25deg);
+  transition: all 0.4s ease;
+}
+
+.boton-red:hover::after {
+  top: -20%;
+  left: -20%;
+}
+
+.boton-red:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 114, 255, 0.3);
+  border-color: white;
+}
+
+.boton-empezar {
+  background: linear-gradient(90deg, #6C23DA, #00c6ff);
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(108, 35, 218, 0.4);
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+  text-decoration: none;
+}
+
+.boton-empezar:hover {
+  background-color: #4a18a3;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(108, 35, 218, 0.4);
+}
+
+.boton-empezar:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 4px 12px rgba(108, 35, 218, 0.25);
+}
+
+.boton-empezar.bloqueado {
+  background: linear-gradient(90deg, #6C23DA, #00c6ff);
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  transition: all 0.3s ease;
+}
+
+/* --------------------------------------------- */
+/* ----------- ESTILOS DE SECCIONES ------------ */
+/* --------------------------------------------- */
+
 section {
   padding: 3rem 2rem; /* Espaciado interno */
   max-width: 900px; /* Ancho máximo */
@@ -297,25 +273,31 @@ section {
 }
 
 section h2 {
-  font-size: 2.5rem; /* Tamaño de fuente */
+  font-size: 2rem; /* Tamaño de fuente para H2 */
   color: #00c6ff; /* Color del texto */
   text-align: center; /* Alineación centrada */
   font-weight: 800; /* Peso de la fuente */
 }
 
-/* Estilo de la caja destacada */
+/* Estilo para párrafos en secciones específicas */
+section p {
+  font-size: 1.1rem; /* Tamaño de fuente uniforme para párrafos */
+  line-height: 1.6; /* Altura de línea */
+  margin: 1rem 0; /* Margen superior e inferior */
+}
+
 .highlight-box {
   background-color: #161b22; /* Color de fondo */
   padding: 2rem; /* Espaciado interno */
   border-radius: 10px; /* Bordes redondeados */
   margin-top: 1rem; /* Margen superior */
-  border: 1px solid rgba(255,255,255,0.05); /* Borde */
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Borde */
 }
 
-/* Estilos para la lista de beneficios */
 .benefits li {
+  list-style: none;
   margin-bottom: 1rem; /* Margen inferior */
-  font-size: 1.1rem; /* Tamaño de fuente */
+  font-size: 1.3rem; /* Tamaño de fuente para precios / destacados */
 }
 
 /* Estilos para la biografía */
@@ -333,91 +315,206 @@ section h2 {
 .bio-text {
   max-width: 700px; /* Ancho máximo */
   margin: auto; /* Centrar horizontalmente */
-  font-size: 1.1rem; /* Tamaño de fuente */
+  font-size: 1.1rem; /* Tamaño de fuente para párrafos comunes */
   line-height: 1.5; /* Altura de línea */
 }
 
 /* Estilo del testimonio */
 .testimonial {
   background-color: #161b22; /* Color de fondo */
-  padding: 2rem; /* Espaciado interno */
+  padding: 2.5rem; /* Espaciado interno */
   border-radius: 15px; /* Bordes redondeados */
   margin-bottom: 2rem; /* Margen inferior */
   font-style: italic; /* Cursiva */
-  border: 1px solid rgba(255,255,255,0.05); /* Borde */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde más visible */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 }
 
-.favicon{
-  border-radius: 20px;
-  width: auto;
-  height: auto;
+.testimonial:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el ratón */
 }
 
 /* Estilos para los elementos de la FAQ */
 .faq-item {
   margin-bottom: 2rem; /* Margen inferior */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.faq-item:hover {
+  transform: scale(1.02); /* Efecto de aumento al pasar el ratón */
 }
 
 .faq-item h3 {
   color: #00c6ff; /* Color del texto */
-  font-size: 1.3rem; /* Tamaño de fuente */
-  margin-bottom: .5rem; /* Margen inferior */
+  font-size: 1.5rem; /* Tamaño de fuente para H3 */
+  margin-bottom: 0.5rem; /* Margen inferior */
+  border-bottom: 1px solid rgba(0, 198, 255, 0.3); /* Línea inferior sutil */
+  padding-bottom: 0.5rem; /* Espaciado inferior */
 }
 
 .faq-item p {
-  font-size: 1.05rem; /* Tamaño de fuente */
+  font-size: 1.05rem; /* Tamaño de fuente para respuestas de FAQ */
+  color: #e0e0e0; /* Color de texto más suave para mejorar la legibilidad */
 }
 
-/* Estilos para el pie de página */
-footer {
-  background-color: #0d1117; /* Color de fondo */
-  color: #d9d9d9; /* Color del texto */
-  text-align: center; /* Alineación centrada */
-  padding: 2rem; /* Espaciado interno */
-  font-size: 0.95rem; /* Tamaño de fuente */
-  border-top: 1px solid rgba(255,255,255,0.1); /* Borde superior */
+.faq-item ul {
+  padding-left: 1.5rem; /* Espaciado a la izquierda para listas */
+  color: #e0e0e0; /* Color de texto más suave para mejorar la legibilidad */
+  font-size: 1.05rem; /* Tamaño de fuente para listas */
 }
 
-/* Estilos para los enlaces de redes sociales en el pie de página */
-.social {
-  margin-top: 2rem; /* Margen superior */
-  text-align: center; /* Alineación centrada */
+/* Estilos para el widget del dólar */
+.dolar-widget {
+  background-color: #2e2e2e; /* Color de fondo oscuro para elegancia */
+  color: #f5f5f5; /* Color de texto claro para mejor legibilidad */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 2.5rem; /* Espaciado interno */
+  max-width: 900px; /* Ancho máximo */
+  margin: 3rem auto; /* Margen superior e inferior */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); /* Sombra más intensa */
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
 }
 
-.social a {
-  margin: 0 15px; /* Margen lateral */
-  color: #00c6ff; /* Color del texto */
-  text-decoration: none; /* Sin subrayado */
-  font-weight: 600; /* Peso de la fuente */
-  display: inline-flex; /* Usar flexbox */
+.dolar-widget:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); /* Sombra más intensa al pasar el ratón */
+}
+
+.dolar-widget-header {
+  display: flex; /* Usar flexbox */
   align-items: center; /* Alinear verticalmente */
-  font-size: 1.1rem; /* Tamaño de fuente */
+  justify-content: space-between; /* Espacio entre elementos */
+  flex-wrap: wrap; /* Permitir que se envuelvan */
+  row-gap: 1rem; /* Espacio entre filas */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* Línea inferior sutil */
+  padding-bottom: 1rem; /* Espaciado inferior */
 }
 
-.social a img {
-  width: 26px; /* Ancho de la imagen */
-  height: 26px; /* Altura de la imagen */
-  margin-right: 8px; /* Margen derecho */
+.dolar-titulo {
+  font-size: 1.8rem; /* Tamaño de fuente aumentado */
+  font-weight: 700; /* Peso de la fuente fuerte */
+  margin: 0; /* Sin margen */
+  color: #ffffff; /* Color del título */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra de texto para mayor legibilidad */
 }
 
-.social a:hover {
-  color: #0091d5; /* Color del texto al pasar */
+.dolar-valor {
+  font-size: 1.8rem; /* Tamaño de fuente aumentado */
+  font-weight: 800; /* Peso de la fuente más fuerte */
+  color: #4be213; /* Color del valor */
+  background-color: rgba(75, 226, 19, 0.15); /* Fondo ligero para el valor */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 0.75rem; /* Espaciado interno */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
 }
 
-/* Ajustes para secciones específicas */
-.seccion-ajustada {
-  scroll-margin-top: 100px; /* Margen superior para desplazamiento */
+.dolar-valor:hover {
+  background-color: rgba(75, 226, 19, 0.25); /* Cambio de fondo al pasar el ratón */
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
 }
 
-.sticky-cta {
-  display: none;
+.dolar-descripcion {
+  margin-top: 1.5rem; /* Margen superior aumentado */
+  font-size: 1rem; /* Tamaño de fuente aumentado */
+  line-height: 1.6; /* Altura de línea ajustada */
+  color: #d9d9d9; /* Color del texto */
+  padding-top: 1rem; /* Espaciado superior */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea superior sutil */
+}
+
+/* Estilos de accesibilidad */
+.dolar-widget a {
+  color: #4be213; /* Color de enlaces */
+  text-decoration: underline; /* Subrayado para enlaces */
+  transition: color 0.3s ease; /* Transición suave para enlaces */
+}
+
+.dolar-widget a:hover {
+  color: #3c9f1b; /* Color de enlace al pasar el ratón */
+}
+
+/* --------------------------------------------- */
+/* ----------- ESTILOS DEL FOOTER -------------- */
+/* --------------------------------------------- */
+
+/* Estilos para el footer */
+.footer {
+  background: linear-gradient(135deg, #0d1117, #1c1f24); /* Degradado de fondo */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación centrada */
+  padding: 3rem 1rem; /* Espaciado interno */
+  font-size: 0.95rem; /* Tamaño de fuente para pie de página */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Borde superior */
+}
+
+.footer-container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Dirección de columnas */
+  align-items: center; /* Alinear elementos al centro */
+}
+
+.footer-logo img {
+  max-width: 150px; /* Ancho máximo del logo */
+  margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.footer-columns {
+  display: flex; /* Usar flexbox para columnas */
+  justify-content: space-between; /* Espacio entre columnas */
+  width: 100%; /* Ancho completo */
+  margin: 1.5rem 0; /* Margen superior e inferior */
+}
+
+.footer-column {
+  flex: 1; /* Cada columna ocupa el mismo espacio */
+  margin: 0 1rem; /* Margen lateral entre columnas */
+  min-width: 200px; /* Ancho mínimo de las columnas */
+}
+
+.footer-column h4 {
+  font-size: 1.2rem; /* Tamaño de fuente para encabezados de columna */
+  color: #4be213; /* Color del encabezado */
+  margin-bottom: 0.5rem; /* Margen inferior */
+  border-bottom: 2px solid #4be213; /* Línea inferior para los encabezados */
+  padding-bottom: 0.5rem; /* Espaciado inferior */
+}
+
+.footer-column ul {
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+}
+
+.footer-column li {
+  margin: 0.5rem 0; /* Espaciado entre los elementos de la lista */
+}
+
+.footer-link {
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para color y transformación */
+}
+
+.footer-link:hover {
+  color: #4be213; /* Color de enlace al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+.footer p {
+  margin: 1rem 0 0; /* Margen superior e inferior */
+  font-size: 0.85rem; /* Tamaño de fuente más pequeño para el texto */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea superior sutil */
+  padding-top: 1rem; /* Espaciado superior */
 }
 
 /* --------------------------------------------- */
 /* ----------- ESTILOS PARA CELULAR ------------ */
 /* --------------------------------------------- */
 @media (max-width: 768px) {
-  /* NAVBAR */
   nav {
     position: sticky;
     top: 0;
@@ -429,87 +526,45 @@ footer {
     align-items: center;
   }
 
-  .contenedor-principal {
-    padding: 1.5rem 1rem;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .accordion-button {
-    padding: 0.9rem 1rem;
-    font-size: 1rem;
-  }
-
-  .hamburger {
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    right: 1rem;
-    background-color: #161b22;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    padding: 1rem;
-    display: none;
-    flex-direction: column;
-    gap: 0.75rem;
-    border-radius: 10px;
-    z-index: 999;
-    width: 200px;
-    animation: fadeIn 0.25s ease-in-out;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    border-radius: 6px;
-    transition: background-color 0.2s ease;
-  }
-
-  .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  /* HEADER / HERO */
   header {
-    padding: 2rem 1rem 1rem;
+    padding: 1rem 1rem 0.5rem; /* antes 2rem 1rem 1rem */
     text-align: center;
     max-width: 92%;
     margin: 0 auto;
   }
 
   header h1 {
-    font-size: 1.4rem;
+    font-size: 1.4rem; /* Tamaño de fuente para H1 en móvil */
     line-height: 1.3;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.8rem; /* antes 1.5rem */
     font-weight: 700;
   }
 
   header p {
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* Tamaño de fuente para párrafos en móvil */
     color: #ffffff;
     line-height: 1.6;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 0.8rem auto; /* ajustamos también */
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section h2 {
+    margin-top: 0.4rem; /* más compacto aún */
   }
 
   .btn-primary {
     display: inline-block;
     margin-top: 1.25rem;
     padding: 0.75rem 1.4rem;
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* Tamaño de fuente para botones en móvil */
     font-weight: 600;
     background-color: #0072ff;
     color: #fff;
@@ -521,32 +576,6 @@ footer {
 
   .btn-primary:hover {
     background-color: #005ed6;
-  }
-
-  /* STICKY CTA */
-  .sticky-cta {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #0072ff;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    z-index: 200;
-    border-top: 2px solid #fff;
-    font-size: 1rem;
-  }
-
-  /* SECTION + CARDS */
-  section {
-    padding: 1.5rem 1rem;
-    margin-bottom: 2rem;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .highlight-box,
@@ -561,7 +590,7 @@ footer {
   .highlight-box h3,
   .faq-item summary,
   .testimonial h4 {
-    font-size: 1.05rem;
+    font-size: 1.5rem; /* Tamaño de fuente para H3 en móvil */
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
@@ -569,14 +598,14 @@ footer {
   .highlight-box p,
   .faq-item p,
   .testimonial p {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Tamaño de fuente para párrafos en móvil */
     line-height: 1.6;
     color: #e0e0e0;
   }
 
   footer p {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* Tamaño de fuente para pie de página en móvil */
     color: #aaa;
     margin-top: 2rem;
     max-width: 90%;
@@ -585,34 +614,14 @@ footer {
   }
 }
 
-
-  /* Animación fade-in opcional */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-
-/* Animación de desvanecimiento */
+/* Animación fade-in opcional */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Comenzar invisible */
-    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+    opacity: 0;
+    transform: translateY(-5px);
   }
   to {
-    opacity: 1; /* Hacer visible */
-    transform: translateY(0); /* Sin desplazamiento */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-
-    @media (min-width: 769px) {
-      #menu-icon {
-        display: none;
-      }
-    }
