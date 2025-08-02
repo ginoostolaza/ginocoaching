@@ -1,0 +1,267 @@
+/* Estilos Generales Mejorados */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Fuente moderna y profesional */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Más suave y menos saturado que #f5f5f5 */
+  color: #2c2c2c; /* Un gris oscuro más elegante y menos duro que #333 */
+  line-height: 1.6; /* Mejor legibilidad */
+  -webkit-font-smoothing: antialiased; /* Suaviza la fuente en navegadores WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suaviza la fuente en Firefox Mac */
+  transition: background-color 0.3s ease; /* Para posibles temas futuros */
+}
+
+.contenedor {
+  max-width: 1140px; /* Un poco más estándar para desktop */
+  margin: 40px auto; /* Separación vertical para respirar */
+  padding: 32px 48px; /* Espaciado interno más equilibrado */
+  background-color: #ffffff; /* Fondo blanco limpio */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Sombra más suave y profunda */
+  border-radius: 12px; /* Bordes ligeramente más redondeados */
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px; /* Espacio entre flex items, mejor que padding en children */
+  /* Evitar que el contenido se pegue al borde */
+  box-sizing: border-box;
+}
+
+/* Estilos Profesionales de la Barra Lateral */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #F5F5F5 0%, #ECECEC 100%);
+  border-right: 1px solid #D9D9D9;
+  padding: 24px 20px;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.05);
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  font-family: 'Poppins', sans-serif;
+  z-index: 10;
+}
+
+/* Lista sin viñetas y con buen espaciado */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Espaciado entre ítems */
+.sidebar li {
+  margin-bottom: 16px;
+}
+
+/* Enlaces estilizados */
+.sidebar a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+/* Efecto hover profesional */
+.sidebar a:hover {
+  background-color: #6C23DA1A; /* Lila translúcido */
+  color: #6C23DA;
+  transform: translateX(4px);
+  box-shadow: 2px 2px 8px rgba(108, 35, 218, 0.1);
+}
+
+/* Estilos del Contenido Principal */
+main {
+  flex-grow: 1;
+  padding-left: 2.5rem; /* 40px */
+  padding-right: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
+section {
+  margin-bottom: 3rem; /* 48px */
+}
+
+h1 {
+  font-size: 2rem; /* 32px */
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #201139;
+}
+
+h2 {
+  font-size: 1.5rem; /* 24px */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #6C23DA;
+}
+
+h3 {
+  font-size: 1.25rem; /* 20px */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  color: #6F559B;
+}
+
+ul, ol {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+a {
+  color: #6C23DA;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4be213;
+}
+
+/* Estilos Específicos Mejorados */
+.resaltado {
+  color: #6C23DA;
+  font-weight: 700;
+  background: linear-gradient(90deg, rgba(108,35,218,0.1) 0%, rgba(108,35,218,0.05) 100%);
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 1.05rem;
+  transition: background 0.3s ease;
+}
+
+.resaltado:hover {
+  background: rgba(108,35,218,0.15);
+}
+
+/* Caja de Nota Profesional */
+.nota {
+  background-color: #F3F0FC;
+  border-left: 6px solid #6C23DA;
+  padding: 18px 22px;
+  font-style: italic;
+  margin-top: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  color: #333;
+  position: relative;
+}
+
+.nota::before {
+  content: "💡 Nota:";
+  font-style: normal;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #4C1BAA;
+  font-size: 1rem;
+}
+
+  @media (max-width: 768px) {
+    /* Estilos Generales Mejorados */
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #2c2c2c;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.3s ease;
+    }
+
+    .contenedor {
+      max-width: 1140px;
+      margin: 40px auto;
+      padding: 32px 48px;
+      background-color: #ffffff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      box-sizing: border-box;
+    }
+
+    /* Estilos Profesionales de la Barra Lateral */
+    .sidebar {
+      width: 100%;
+      background: linear-gradient(180deg, #F5F5F5 0%, #ECECEC 100%);
+      border-right: 1px solid #D9D9D9;
+      padding: 24px 20px;
+      box-shadow: 4px 0 12px rgba(0, 0, 0, 0.05);
+      min-height: auto;
+      position: static;
+      font-family: 'Poppins', sans-serif;
+      z-index: 10;
+    }
+
+    /* Estilos del Contenido Principal */
+    main {
+      flex-grow: 1;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+      color: #201139;
+    }
+
+    h2 {
+      font-size: 1.375rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      color: #6C23DA;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: #6F559B;
+    }
+
+    .resaltado {
+      font-size: 1rem;
+    }
+
+    .nota {
+      padding: 16px 18px;
+      margin-top: 20px;
+    }
+  }
