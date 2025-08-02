@@ -3,9 +3,9 @@
    ========================= */
 body { 
     font-family: 'Poppins', sans-serif; /* Fuente del cuerpo */
-    background-color: #0d1117; /* Color de fondo */
-    color: #ffffff; /* Color del texto */
-    line-height: 1.6; /* Altura de línea */
+    background-color: #0d1117; /* Color de fondo, un tono oscuro */
+    color: #ffffff; /* Color del texto, blanco */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
     overflow-x: hidden; /* Evitar desplazamiento horizontal */
 }
 
@@ -13,10 +13,10 @@ body {
    Estilos para el Logo
    ========================= */
 .logo-img {
-    max-width: 150px; /* Ancho máximo del logo */
-    display: block; /* Mostrar como bloque */
-    margin: 0 auto 20px; /* Centrar y margen inferior */
-    border-radius: 10px; /* Bordes redondeados */
+    max-width: 150px; /* Ancho máximo del logo para que no se desborde */
+    display: block; /* Mostrar como bloque para centrar */
+    margin: 0 auto 20px; /* Centrar y margen inferior de 20px */
+    border-radius: 10px; /* Bordes redondeados para suavizar el logo */
 }
 
 /* =========================
@@ -31,26 +31,26 @@ body {
    ========================= */
 header {
     background: linear-gradient(to bottom, rgba(13,17,23,0.9), rgba(13,17,23,0.95)), 
-                url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; /* Fondo con imagen */
+                url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; /* Fondo con imagen y degradado */
     height: 100vh; /* Altura completa de la ventana */
-    display: flex; /* Usar flexbox */
+    display: flex; /* Usar flexbox para alinear contenido */
     align-items: center; /* Alinear verticalmente */
     justify-content: center; /* Centrar horizontalmente */
-    text-align: center; /* Alineación centrada */
-    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Alineación centrada del texto */
+    padding: 2rem; /* Espaciado interno de 2rem */
 }
 
 /* =========================
    Estilo del Título Principal
    ========================= */
 header h1 {
-      font-size: 3rem;
-      background: linear-gradient(90deg, #6C23DA, #00c6ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 900;
-      letter-spacing: 1px;
-      margin-bottom: 1rem;
+      font-size: 3rem; /* Tamaño de fuente del título principal */
+      background: linear-gradient(90deg, #6C23DA, #00c6ff); /* Degradado de color para el texto */
+      -webkit-background-clip: text; /* Clip de fondo para el texto (solo en WebKit) */
+      -webkit-text-fill-color: transparent; /* Hacer el color del texto transparente para mostrar el degradado */
+      font-weight: 900; /* Peso de la fuente */
+      letter-spacing: 1px; /* Espaciado entre letras */
+      margin-bottom: 1rem; /* Margen inferior de 1rem */
 }
 
 /* =========================
@@ -60,7 +60,7 @@ header {
     background: 
         linear-gradient(to bottom, rgba(13,17,23,0.92), rgba(13,17,23,0.96)), 
         url('https://images.unsplash.com/photo-1565371372210-04eabe4e0b66?auto=format&fit=crop&w=1500&q=80') 
-        center/cover no-repeat; /* Fondo con imagen */
+        center/cover no-repeat; /* Fondo con imagen y degradado */
     min-height: 100vh; /* Altura mínima del encabezado */
     
     display: flex; /* Usar flexbox */
@@ -71,7 +71,7 @@ header {
     
     text-align: center; /* Alineación centrada */
     padding: 6rem 1.5rem 3rem; /* Espaciado interno (más espacio arriba, menos abajo) */
-    color: #f0f0f0; /* Color del texto */
+    color: #f0f0f0; /* Color del texto, gris claro */
     position: relative; /* Posición relativa para elementos hijos */
 }
 
@@ -80,33 +80,33 @@ header {
    ========================= */
 .logo-img {
     max-width: 120px; /* Ancho máximo del logo */
-    margin-bottom: 1.5rem; /* Margen inferior */
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Sombra para destacar */
+    margin-bottom: 1.5rem; /* Margen inferior de 1.5rem */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)); /* Sombra para destacar el logo */
 }
 
 /* =========================
    Subtítulo del Encabezado
    ========================= */
 header p {
-    font-size: 1.25rem; /* Tamaño de fuente */
-    max-width: 600px; /* Ancho máximo */
+    font-size: 1.25rem; /* Tamaño de fuente del subtítulo */
+    max-width: 600px; /* Ancho máximo del subtítulo */
     margin: 0 auto; /* Centrar horizontalmente */
-    line-height: 1.6; /* Altura de línea */
-    color: #d1d1d1; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    color: #d1d1d1; /* Color del texto, gris claro */
 }
 
 /* =========================
    Estilos de Títulos
    ========================= */
 h2, section h2 {
-    font-size: 2.5rem; /* Tamaño de fuente */
-    color: #00c6ff; /* Color del texto */
+    font-size: 2.5rem; /* Tamaño de fuente para subtítulos */
+    color: #00c6ff; /* Color del texto, azul */
     text-align: center; /* Alineación centrada */
     font-weight: 800; /* Peso de la fuente */
 }
 
 h3 {
-    color: #007BFF; /* Color del texto */
+    color: #007BFF; /* Color del texto, azul más oscuro */
     text-align: center; /* Centrar títulos */
 }
 
@@ -114,8 +114,8 @@ h3 {
    Estilos para las Secciones
    ========================= */
 section {
-    padding: 3rem 2rem; /* Espaciado interno */
-    max-width: 900px; /* Ancho máximo */
+    padding: 3rem 2rem; /* Espaciado interno de 3rem arriba y abajo, 2rem a los lados */
+    max-width: 900px; /* Ancho máximo de la sección */
     margin: auto; /* Centrar horizontalmente */
 }
 
@@ -123,29 +123,29 @@ section {
    Estilos para Beneficios y Contenido
    ========================= */
 .beneficios, .verificacion, .ul {
-    background: #161b22; /* Color de fondo */
+    background: #161b22; /* Color de fondo, gris oscuro */
     border-radius: 8px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin-bottom: 30px; /* Margen inferior */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 30px; /* Margen inferior de 30px */
 }
 
 /* =========================
    Estilos de Listas en Beneficios
    ========================= */
 .beneficios ul {
-    list-style-type: none; /* Eliminar las viñetas */
+    list-style-type: none; /* Eliminar las viñetas de la lista */
     padding: 0; /* Eliminar el padding por defecto */
     margin: 0; /* Eliminar el margen por defecto */
-    text-align: center; /* Centrar el texto */
+    text-align: center; /* Centrar el texto de la lista */
 }
 
 /* =========================
    Estilos de Botones de Acordeón
    ========================= */
 .accordion-button {
-    background-color: #0056b3; /* Azul profesional */
-    color: #fff; /* Color del texto */
+    background-color: #0056b3; /* Color de fondo del botón, azul profesional */
+    color: #fff; /* Color del texto, blanco */
     border: none; /* Sin borde */
     padding: 12px 16px; /* Espaciado interno */
     width: 100%; /* Ancho completo */
@@ -154,13 +154,13 @@ section {
     font-size: 1rem; /* Tamaño de fuente */
     border-radius: 10px; /* Bordes redondeados */
     transition: background-color 0.3s ease; /* Transición suave para el fondo */
-    margin-bottom: 8px; /* Margen inferior */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra */
+    margin-bottom: 8px; /* Margen inferior de 8px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra para el botón */
 }
 
 /* Efecto al pasar el ratón sobre el botón */
 .accordion-button:hover {
-    transform: translateY(-2px); /* Mover hacia arriba */
+    transform: translateY(-2px); /* Mover hacia arriba al pasar el ratón */
     background-color: #003f7f; /* Color de fondo al pasar */
 }
 
@@ -168,12 +168,12 @@ section {
    Contenido de Acordeón
    ========================= */
 .accordion-content {
-    transition: all 0.5s ease; /* Transición suave */
+    transition: all 0.5s ease; /* Transición suave para mostrar/ocultar */
     overflow: hidden; /* Ocultar contenido desbordante */
     padding: 15px; /* Espaciado interno */
     display: none; /* Ocultar por defecto */
     border-top: 1px solid #ccc; /* Borde superior */
-    margin-top: 5px; /* Margen superior */
+    margin-top: 5px; /* Margen superior de 5px */
     text-align: left; /* Alinear contenido a la izquierda */
     max-width: 100%; /* Ancho máximo para evitar desbordamiento */
 }
@@ -182,31 +182,110 @@ section {
    Estilos de Divisores
    ========================= */
 .divider {
-    margin: 15px 0; /* Margen superior e inferior */
+    margin: 15px 0; /* Margen superior e inferior de 15px */
 }
 
-/* =========================
-   Estilos del Pie de Página
-   ========================= */
-.footer {
-    background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Centrar texto */
-    font-size: 14px; /* Tamaño de fuente */
-    border-top: 1px solid #222; /* Borde superior */
+/* --------------------------------------------- */
+/* ----------- ESTILOS DEL FOOTER -------------- */
+/* --------------------------------------------- */
+
+/* Estilos para el footer de la pasarela de pago */
+.footer-payment {
+  background: linear-gradient(135deg, #0d1117, #1c1f24); /* Degradado de fondo */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación centrada */
+  padding: 3rem 1rem; /* Espaciado interno */
+  font-size: 0.95rem; /* Tamaño de fuente para pie de página */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Borde superior */
 }
 
-/* =========================
-   Estilos para Columnas en el Pie de Página
-   ========================= */
-.footer .footer-columns {
-    display: flex; /* Usar flexbox */
-    justify-content: space-around; /* Espacio entre columnas */
-    flex-wrap: wrap; /* Permitir que las columnas se ajusten */
-    max-width: 1200px; /* Ancho máximo para el contenido */
-    margin: 0 auto; /* Centrar el contenedor */
-    padding: 20px 10px; /* Espaciado interno */
+.footer-payment-container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Dirección de columnas */
+  align-items: center; /* Alinear elementos al centro */
+}
+
+.footer-payment-logo img {
+  max-width: 150px; /* Ancho máximo del logo */
+  margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.footer-payment-columns {
+  display: flex; /* Usar flexbox para columnas */
+  justify-content: space-between; /* Espacio entre columnas */
+  width: 100%; /* Ancho completo */
+  margin: 1.5rem 0; /* Margen superior e inferior */
+}
+
+.footer-payment-column {
+  flex: 1; /* Cada columna ocupa el mismo espacio */
+  margin: 0 1rem; /* Margen lateral entre columnas */
+  min-width: 200px; /* Ancho mínimo de las columnas */
+}
+
+.footer-payment-column h4 {
+  font-size: 1.2rem; /* Tamaño de fuente para encabezados de columna */
+  color: #4be213; /* Color del encabezado */
+  margin-bottom: 0.5rem; /* Margen inferior */
+  border-bottom: 2px solid #4be213; /* Línea inferior para los encabezados */
+  padding-bottom: 0.5rem; /* Espaciado inferior */
+}
+
+.footer-payment-column ul {
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+}
+
+.footer-payment-column li {
+  margin: 0.5rem 0; /* Espaciado entre los elementos de la lista */
+}
+
+.footer-payment-link {
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para color y transformación */
+}
+
+.footer-payment-link:hover {
+  color: #4be213; /* Color de enlace al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+.footer-payment p {
+  margin: 1rem 0 0; /* Margen superior e inferior */
+  font-size: 0.85rem; /* Tamaño de fuente más pequeño para el texto */
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea superior sutil */
+  padding-top: 1rem; /* Espaciado superior */
+}
+
+.footer-contact-info {
+    margin: 40px 0; /* Mayor espacio superior e inferior */
+    padding: 20px; /* Espaciado interno para mayor separación */
+    background-color: none; /* Color de fondo sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: center; /* Centrar el texto */
+}
+
+.texto-info {
+    font-size: 18px; /* Aumentar tamaño de fuente */
+    line-height: 1.6; /* Mejorar altura de línea para legibilidad */
+    color: white; /* Color del texto */
+    margin: 10px 0; /* Espaciado entre párrafos */
+}
+
+.footer-contact-info a {
+    color: #4be213; /* Color del enlace */
+    text-decoration: none; /* Eliminar subrayado */
+    font-weight: bold; /* Negrita para destacar el enlace */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.footer-contact-info a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+    color: #3a9e1d; /* Color más oscuro al pasar el ratón */
 }
 
 /* =========================
@@ -219,7 +298,7 @@ section, .beneficios, .contenido {
     text-align: center; /* Centrar texto */
     border-radius: 14px; /* Bordes redondeados */
     background-color: #161b22; /* Color de fondo */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 /*a*/
@@ -230,7 +309,7 @@ section, .beneficios, .contenido {
 }
 
 .nota-general {
-    color: #d1d1d1; /* Color del texto */
+    color: #d1d1d1; /* Color del texto, gris claro */
     margin-top: 10px; /* Margen superior */
     font-size: 1.1rem; /* Tamaño de fuente */
 }
@@ -276,7 +355,7 @@ section, .beneficios, .contenido {
 }
 
 .beneficio p {
-    color: #d1d1d1; /* Color del texto */
+    color: #d1d1d1; /* Color del texto, gris claro */
     margin: 0; /* Sin margen */
     line-height: 1.5; /* Altura de línea */
 }
@@ -285,7 +364,7 @@ section, .beneficios, .contenido {
    Estilos para la Sección de Beneficios
    ========================= */
 .beneficios {
-    background-color: #0d1117;; /* Color de fondo general */
+    background-color: #0d1117; /* Color de fondo general */
     padding: 20px; /* Espaciado interno */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -354,7 +433,6 @@ section, .beneficios, .contenido {
     margin-right: 10px; /* Espacio entre el ícono y el texto */
 }
 
-
 /* =========================
    Estilos para Títulos en el Pie de Página
    ========================= */
@@ -381,15 +459,7 @@ section, .beneficios, .contenido {
 /* =========================
    Estilos de Botones
    ========================= */
-/* =========================
-   Estilos de Botón Oculto
-   ========================= */
-/* =========================
-   Estilos de Botón Oculto en el Footer
-   ========================= */
-/* =========================
-   Estilos de Botón Oculto en el Footer
-   ========================= */
+
 .token-button {
     background-color: #007BFF; /* Color del botón igual al del footer */
     color: transparent; /* Hacer el texto transparente */
@@ -513,19 +583,19 @@ section, .beneficios, .contenido {
    Estilos de Métodos de Pago
    ========================= */
 .metodo-pago {
-  max-width: 600px;        /* $aaa: Más angosto */
-  margin: 2rem auto;       /* $aaa: Centrado con espacio arriba y abajo */
-  padding: 1rem;           /* $aaa: Espaciado interno */
-  border-radius: 12px;     /* $aaa: Bordes redondeados */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* $aaa: Sombra sutil */
-  font-size: 1rem;         /* $aaa: Tamaño legible */
-  line-height: 1.6;        /* $aaa: Mejor lectura */
+  max-width: 600px;        /* Limitar el ancho del contenedor de métodos de pago */
+  margin: 2rem auto;       /* Centrado con espacio arriba y abajo */
+  padding: 1rem;           /* Espaciado interno */
+  border-radius: 12px;     /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  font-size: 1rem;         /* Tamaño legible */
+  line-height: 1.6;        /* Mejor lectura */
 }
 
 .metodo-pago h3 {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  text-align: center; /* $aaa: Centrado */
+  font-size: 1.3rem; /* Tamaño de fuente para subtítulos de métodos de pago */
+  margin-bottom: 1rem; /* Margen inferior */
+  text-align: center; /* Centrado */
 }
 
 .metodo-pago h4 {
@@ -538,12 +608,12 @@ section, .beneficios, .contenido {
 
 /* Estilos para listas de métodos de pago */
 .metodo-pago ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
+  padding-left: 1.5rem; /* Espaciado a la izquierda */
+  list-style-type: disc; /* Viñetas de tipo disco */
 }
 
 .metodo-pago li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem; /* Margen inferior entre elementos */
 }
 
 /* Estilos para enlaces en métodos de pago */
@@ -576,7 +646,7 @@ h1, h2, h3 {
   display: inline-block; /* Permite que se ajuste al texto */
   width: 25px; /* Ajusta el tamaño del ícono */
   height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png');
+  background-image: url('https://em-content.zobj.net/source/apple/155/pushpin_1f4cc.png'); /* Imagen de fondo del ícono */
   background-size: contain; /* Asegura que la imagen se ajuste */
   background-repeat: no-repeat; /* Evita que se repita la imagen */
   vertical-align: middle; /* Alinea verticalmente con el texto */
@@ -587,7 +657,7 @@ h1, h2, h3 {
   display: inline-block; /* Permite que se ajuste al texto */
   width: 25px; /* Ajusta el tamaño del ícono */
   height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/fire_1f525.png');
+  background-image: url('https://em-content.zobj.net/source/apple/419/fire_1f525.png'); /* Imagen de fondo del ícono */
   background-size: contain; /* Asegura que la imagen se ajuste */
   background-repeat: no-repeat; /* Evita que se repita la imagen */
   vertical-align: 2px; /* Alinea verticalmente con el texto */
@@ -605,7 +675,7 @@ h1, h2, h3 {
   display: inline-block; /* Permite que se ajuste al texto */
   width: 25px; /* Ajusta el tamaño del ícono */
   height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png');
+  background-image: url('https://em-content.zobj.net/source/apple/419/check-mark-button_2705.png'); /* Imagen de fondo del ícono */
   background-size: contain; /* Asegura que la imagen se ajuste */
   background-repeat: no-repeat; /* Evita que se repita la imagen */
   vertical-align: middle; /* Alinea verticalmente con el texto */
@@ -616,7 +686,7 @@ h1, h2, h3 {
   display: inline-block; /* Permite que se ajuste al texto */
   width: 25px; /* Ajusta el tamaño del ícono */
   height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/rocket_1f680.png');
+  background-image: url('https://em-content.zobj.net/source/apple/419/rocket_1f680.png'); /* Imagen de fondo del ícono */
   background-size: contain; /* Asegura que la imagen se ajuste */
   background-repeat: no-repeat; /* Evita que se repita la imagen */
   vertical-align: middle; /* Alinea verticalmente con el texto */
@@ -627,7 +697,7 @@ h1, h2, h3 {
   display: inline-block; /* Permite que se ajuste al texto */
   width: 25px; /* Ajusta el tamaño del ícono */
   height: 25px; /* Mantiene la proporción */
-  background-image: url('https://em-content.zobj.net/source/apple/419/prohibited_1f6ab.png');
+  background-image: url('https://em-content.zobj.net/source/apple/419/prohibited_1f6ab.png'); /* Imagen de fondo del ícono */
   background-size: contain; /* Asegura que la imagen se ajuste */
   background-repeat: no-repeat; /* Evita que se repita la imagen */
   vertical-align: middle; /* Alinea verticalmente con el texto */
@@ -635,8 +705,8 @@ h1, h2, h3 {
 }
 
 .bloqueado {
-  opacity: 0.4;
-  border-left: 6px solid #ccc;
+  opacity: 0.4; /* Opacidad para indicar que está bloqueado */
+  border-left: 6px solid #ccc; /* Borde izquierdo para destacar */
 }
 
 /* =========================
@@ -648,137 +718,136 @@ h1, h2, h3 {
 
 /* ==================== BASE ==================== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Sin margen por defecto */
+  padding: 0; /* Sin padding por defecto */
+  box-sizing: border-box; /* Incluir padding y borde en el ancho total */
 }
 
 /* $aaa */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; /* Fuente del cuerpo */
   overflow-x: hidden; /* $aaa para evitar scroll lateral */
 }
 
 /* ==================== HEADER Y MENÚ ==================== */
 
 nav#mobile-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background: #201139;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+  display: flex; /* Usar flexbox para el menú */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Alinear verticalmente */
+  padding: 1rem; /* Espaciado interno */
+  background: #201139; /* Color de fondo del menú */
+  color: white; /* Color del texto */
+  position: sticky; /* Fijar el menú en la parte superior */
+  top: 0; /* Posición en la parte superior */
+  z-index: 999; /* Asegurarse de que esté por encima de otros elementos */
 }
 
 /* $aaa */
 nav#mobile-menu h1 a {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+  font-size: 1.2rem; /* Tamaño de fuente del título */
+  text-decoration: none; /* Sin subrayado */
+  color: white; /* Color del texto */
+  font-weight: bold; /* Peso de la fuente */
 }
 
 /* $aaa */
 button.hamburger {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  font-size: 2rem; /* Tamaño de fuente para el botón hamburguesa */
+  color: white; /* Color del texto */
+  cursor: pointer; /* Cambiar cursor al pasar */
 }
 
 /* Menú desplegable */
 .menu {
-  display: none;
-  flex-direction: column;
-  background-color: #201139;
-  width: 100%;
-  text-align: left;
-  padding: 1rem;
+  display: none; /* Ocultar menú por defecto */
+  flex-direction: column; /* Dirección de flexión en columna */
+  background-color: #201139; /* Color de fondo del menú */
+  width: 100%; /* Ancho completo */
+  text-align: left; /* Alinear texto a la izquierda */
+  padding: 1rem; /* Espaciado interno */
 }
 
 /* $aaa */
 .menu a {
-  padding: 0.75rem 0;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
+  padding: 0.75rem 0; /* Espaciado vertical para enlaces */
+  color: white; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1rem; /* Tamaño de fuente */
 }
 
 /* Mostrar menú cuando está abierto */
 .menu.open {
-  display: flex;
+  display: flex; /* Mostrar el menú */
 }
 
 .contenedor-principal {
-  max-width: 600px; /* $aaa */
-  margin: 0 auto;
-  padding: 1rem;
+  max-width: 600px; /* Ancho máximo del contenedor principal */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 1rem; /* Espaciado interno */
 }
 
 .acordeones {
-  max-width: 600px; /* $aaa: Limitamos el ancho para hacerlo más angosto */
-  margin: 0 auto;   /* $aaa: Centramos horizontalmente */
-  padding: 1rem;
+  max-width: 600px; /* Limitar el ancho para hacerlo más angosto */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 1rem; /* Espaciado interno */
 }
 
 .acordeon-content {
-  max-width: 600px; /* $aaa: Igual que el contenedor padre para mantenerlo angosto */
-  margin: 0 auto;   /* $aaa */
+  max-width: 600px; /* Igual que el contenedor padre para mantenerlo angosto */
+  margin: 0 auto; /* Centrar horizontalmente */
 }
 
 .beneficios-list {
-  padding-left: 1rem;
-  list-style: disc;
-  line-height: 1.7;
-  font-size: 1rem;
-  max-width: 600px; /* $aaa */
-  margin: 0 auto;   /* $aaa */
+  padding-left: 1rem; /* Espaciado a la izquierda */
+  list-style: disc; /* Estilo de lista en disco */
+  line-height: 1.7; /* Altura de línea */
+  font-size: 1rem; /* Tamaño de fuente */
+  max-width: 600px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
 }
-
 
 /* ==================== SECCIONES ==================== */
 
 /* $aaa */
 section {
-  padding: 2rem 1rem;
-  max-width: 100%;
+  padding: 2rem 1rem; /* Espaciado interno */
+  max-width: 100%; /* Ancho máximo */
 }
 
 /* $aaa */
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
+  font-size: 1.5rem; /* Tamaño de fuente */
+  margin-bottom: 1rem; /* Margen inferior */
+  text-align: center; /* Centrar texto */
 }
 
 /* ==================== TEXTO Y CONTENEDORES ==================== */
 
 /* $aaa */
 p, li {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #D9D9D9;
+  font-size: 1rem; /* Tamaño de fuente */
+  line-height: 1.6; /* Altura de línea */
+  color: #D9D9D9; /* Color del texto */
 }
 
 /* $aaa */
 ul {
-  padding-left: 1.5rem;
+  padding-left: 1.5rem; /* Espaciado a la izquierda */
 }
 
 /* ==================== FAQS ==================== */
 
 /* $aaa */
 .faqs {
-  padding: 1rem;
+  padding: 1rem; /* Espaciado interno */
 }
 
 /* $aaa */
 .faq-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* Margen inferior */
 }
 
 /* ==================== MEDIA QUERIES ==================== */
@@ -786,27 +855,27 @@ ul {
 @media (max-width: 768px) {
   /* $aaa Ajuste del título */
   nav#mobile-menu h1 a {
-    font-size: 1rem;
+    font-size: 1rem; /* Tamaño de fuente reducido */
   }
 
   /* $aaa Botón hamburguesa más grande */
   button.hamburger {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Tamaño de fuente aumentado */
   }
 
   /* $aaa Texto más adaptable */
   p, li {
-    font-size: 0.95rem;
+    font-size: 0.95rem; /* Tamaño de fuente reducido */
   }
 
   /* $aaa Secciones con menos padding */
   section {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem; /* Espaciado interno reducido */
   }
 
   /* $aaa FAQ */
   .faq-item h3 {
-    font-size: 1rem;
+    font-size: 1rem; /* Tamaño de fuente reducido */
   }
 }
 
@@ -814,80 +883,80 @@ ul {
 
 /* $aaa Clase menu */
 .menu.abrir {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Mostrar menú */
+  flex-direction: column; /* Dirección de flexión en columna */
 }
 
 /* ==================== FINAL ==================== */
 
 .titulo-fase {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  text-align: center; /* Centrar título de fase */
+  font-size: 2rem; /* Tamaño de fuente */
+  font-weight: 800; /* Peso de la fuente */
+  text-transform: uppercase; /* Transformar texto a mayúsculas */
+  margin-bottom: 1rem; /* Margen inferior */
 }
 
 .subtitulo-fase {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #ccc;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center; /* Centrar subtítulo */
+  font-size: 1.1rem; /* Tamaño de fuente */
+  color: #ccc; /* Color del texto, gris claro */
+  margin-bottom: 2rem; /* Margen inferior */
+  max-width: 600px; /* Ancho máximo */
+  margin-left: auto; /* Margen izquierdo automático */
+  margin-right: auto; /* Margen derecho automático */
 }
 
 .acordeon-header {
-  background-color: linear-gradient(90deg, #6C23DA, #00c6ff);;
-  color: white;
-  font-weight: 700;
-  font-size: 1.2rem;
-  padding: 1rem;
-  border-radius: 12px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: linear-gradient(90deg, #6C23DA, #00c6ff); /* Degradado de fondo */
+  color: white; /* Color del texto */
+  font-weight: 700; /* Peso de la fuente */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 12px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar */
+  display: flex; /* Usar flexbox */
+  justify-content: space-between; /* Espacio entre elementos */
+  align-items: center; /* Centrar verticalmente */
 }
 
 .precio-fase {
-  font-weight: 400;
-  font-size: 1.4rem;
-  color: #ffffff;
-  margin-left: 10px;
+  font-weight: 400; /* Peso de la fuente */
+  font-size: 1.4rem; /* Tamaño de fuente */
+  color: #ffffff; /* Color del texto */
+  margin-left: 10px; /* Margen izquierdo */
 }
 
 .acordeon-content {
-  background-color: linear-gradient(90deg, #6C23DA, #00c6ff);
-  border-radius: 12px;
-  margin-top: 1rem;
-  padding: 1.5rem;
-  color: #D9D9D9;
-  font-size: 1rem;
+  background-color: linear-gradient(90deg, #6C23DA, #00c6ff); /* Degradado de fondo */
+  border-radius: 12px; /* Bordes redondeados */
+  margin-top: 1rem; /* Margen superior */
+  padding: 1.5rem; /* Espaciado interno */
+  color: #D9D9D9; /* Color del texto */
+  font-size: 1rem; /* Tamaño de fuente */
 }
 
 .beneficios-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem 0;
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+  margin: 0 0 1rem 0; /* Margen inferior */
 }
 
 .beneficios-list li {
-  margin-bottom: 0.8rem;
-  line-height: 1.5;
+  margin-bottom: 0.8rem; /* Margen inferior entre elementos */
+  line-height: 1.5; /* Altura de línea */
 }
 
 .beneficio-titulo {
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 600; /* Peso de la fuente para el título de beneficios */
+  color: #ffffff; /* Color del texto, blanco */
 }
 
 .frase-final {
-  text-align: center;
-  font-style: italic;
-  color: #bbb;
-  margin-top: 1rem;
+  text-align: center; /* Centrar frase final */
+  font-style: italic; /* Estilo de fuente en cursiva */
+  color: #bbb; /* Color del texto, gris claro */
+  margin-top: 1rem; /* Margen superior */
 }
 
 /* =========================
@@ -895,24 +964,19 @@ ul {
    ========================= */
 @media (min-width: 769px) {
     .titulo-fase {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Tamaño de fuente para pantallas grandes */
     }
 
     .subtitulo-fase {
-        font-size: 1rem;
-        padding: 0 1rem;
+        font-size: 1rem; /* Tamaño de fuente para subtítulos en pantallas grandes */
+        padding: 0 1rem; /* Espaciado horizontal */
     }
 
     .acordeon-content {
-        font-size: 0.95rem;
-    }
-    .accordion-content {
-        text-align: left; /* Alinear contenido a la izquierda */
-        padding: 15px; /* Espaciado interno */
-        display: block; /* Mostrar el contenido */
-        max-width: 100%; /* Ancho máximo para evitar desbordamiento */
+        font-size: 0.95rem; /* Tamaño de fuente del contenido del acordeón */
     }
 }
+
 /* =========================
    Contenido de Acordeón
    ========================= */
