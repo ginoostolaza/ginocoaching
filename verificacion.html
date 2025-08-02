@@ -64,7 +64,7 @@
     }
 
     button:hover {
-      background-color: #3bc20f;
+      background-color: #005dd8;
     }
 
     .error {
@@ -92,7 +92,7 @@
       e.preventDefault();
       const tokenIngresado = document.getElementById("token").value.trim();
       if (tokensValidos.includes(tokenIngresado)) {
-        window.location.href = "contenido/index.html";
+        window.location.href = "acceso1.html";
       } else {
         mensajeError.textContent = "Token inválido. Revisá tu código o contactá a Gino.";
       }
